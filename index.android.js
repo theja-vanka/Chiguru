@@ -42,8 +42,8 @@ export default class Chiguru extends Component {
     outputRange: ['0deg', '360deg']
   })
   const scaleText = this.scaleValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [0.5, 2]
+    inputRange: [0, 0.5, 1],
+    outputRange: [1, 1.1, 1]
   })
     return (
       <BackgroundImage>
@@ -53,7 +53,7 @@ export default class Chiguru extends Component {
           width: null,
           height: null,
           resizeMode: 'cover',
-          transform: [{rotate: spin}] }}
+          transform: [{rotate: spin},{scale: scaleText}] }}
           source={require('./images/sp_lines.png')} />
       </BackgroundImage>
     );
@@ -87,7 +87,7 @@ spin () {
   }
   Animated.parallel([
     createSpin(this.spinValue, 40000, Easing.linear),
-    createAnimation(this.scaleValue, 1000, Easing.ease, 1000)
+    createAnimation(this.scaleValue, 2000, Easing.linear, 1000)
            
   ]).start()
 }
