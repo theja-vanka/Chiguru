@@ -34,11 +34,16 @@ export default class Chiguru extends Component {
   constructor () {
   super()
   this.spinValue = new Animated.Value(0)
+  this.scaleValue = new Animated.Value(0)
 }
   render() {
      const spin = this.spinValue.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '360deg']
+  })
+  const scaleText = this.scaleValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [0.5, 2]
   })
     return (
       <BackgroundImage>
@@ -58,14 +63,33 @@ export default class Chiguru extends Component {
 }
 spin () {
   this.spinValue.setValue(0)
-  Animated.timing(
-    this.spinValue,
-    {
-      toValue: 1,
-      duration: 40000,
-      easing: Easing.linear
-    }
-  ).start(() => this.spin())
+  this.scaleValue.setValue(0)
+  const createAnimation = function (value, duration, easing, delay = 0) {
+    return Animated.timing(
+      value,
+      {
+        toValue: 1,
+        duration,
+        easing,
+        delay
+      }
+    )
+  }
+   const createSpin = function (value, duration, easing) {
+    return Animated.timing(
+      value,
+      {
+        toValue: 1,
+        duration,
+        easing,
+      }
+    )
+  }
+  Animated.parallel([
+    createSpin(this.spinValue, 40000, Easing.linear),
+    createAnimation(this.scaleValue, 1000, Easing.ease, 1000)
+           
+  ]).start()
 }
 }
 
