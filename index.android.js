@@ -15,6 +15,10 @@ import {
   Easing
 } from 'react-native';
 
+import {
+  Button
+} from 'react-native-elements';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -25,6 +29,32 @@ class BackgroundImage extends Component {
                   {this.props.children}
 
             </Image>
+        );
+    }
+}
+
+class BackgroundButton extends Component {
+  
+    render() {
+        return (
+         <View style={styles.container}>
+              <Button
+  title='Tap Here'
+  backgroundColor='rgba(0,0,0,0)' />
+  {this.props.children}
+              </View>
+        );
+    }
+}
+class BackgroundCitech extends Component {
+  
+    render() {
+        return (
+         <View style={styles.container}>
+              <Text style={styles.welcome}>
+                </Text>
+  {this.props.children}
+              </View>
         );
     }
 }
@@ -41,33 +71,6 @@ class BackgroundTest extends Component {
     }
 }
 
-class BackgroundLogo extends Component {
-  constructor () {
-  super()
-  this.springValue = new Animated.Value(0.3)
-}
-  
-    render() {
-        return (
-            <Animated.Image
-      style={{ flex: 1, width: 100, height: 100, resizeMode: 'cover', transform: [{scale: this.springValue}] }}
-     source={require('./images/sp_logo.png')}/>
-        );
-    }
-    componentDidMount () {
-  this.spring()
-}
-    spring () {
-  this.springValue.setValue(0.3)
-  Animated.spring(
-    this.springValue,
-    {
-      toValue: 1,
-      friction: 1
-    }
-  ).start()
-}
-}
 
 class BackgroundLines extends Component {
   constructor(){
@@ -83,18 +86,18 @@ class BackgroundLines extends Component {
   })
   const scaleText = this.scaleValue.interpolate({
     inputRange: [0, 0.5, 1],
-    outputRange: [1, 1.1, 1]
+    outputRange: [1.1, 1.2, 1.1]
   })
         return (
             <Animated.Image
         style={{
-          flex: 1,
+          flex: 6,
           width: null,
           height: null,
           resizeMode: 'cover',
           transform: [{rotate: spin},{scale: scaleText}] }}
           source={require('./images/sp_lines.png')}>
-
+          {this.props.children}
           </Animated.Image>
         );
     }
@@ -141,8 +144,12 @@ export default class Chiguru extends Component {
     return (
       <BackgroundImage>
         <BackgroundTest>
+     <BackgroundCitech>
+       </BackgroundCitech>
         <BackgroundLines>
-          </BackgroundLines>
+            </BackgroundLines>
+                 <BackgroundButton>
+                   </BackgroundButton>
           </BackgroundTest>         
       </BackgroundImage>
     );
@@ -153,8 +160,7 @@ export default class Chiguru extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    
     backgroundColor: 'rgba(0,0,0,0)',
   },
   backgroundImage: {
