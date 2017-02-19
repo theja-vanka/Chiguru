@@ -28,16 +28,56 @@ class BackgroundImage extends Component {
         );
     }
 }
+class BackgroundTest extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/sp_logo.png')}
+                  style={styles.backgroundImage}>
 
+          {this.props.children}
+            </Image>
+        );
+    }
+}
 
-export default class Chiguru extends Component {
+class BackgroundLogo extends Component {
   constructor () {
   super()
-  this.spinValue = new Animated.Value(0)
-  this.scaleValue = new Animated.Value(0)
+  this.springValue = new Animated.Value(0.3)
 }
-  render() {
-     const spin = this.spinValue.interpolate({
+  
+    render() {
+        return (
+            <Animated.Image
+      style={{ flex: 1, width: 100, height: 100, resizeMode: 'cover', transform: [{scale: this.springValue}] }}
+     source={require('./images/sp_logo.png')}/>
+        );
+    }
+    componentDidMount () {
+  this.spring()
+}
+    spring () {
+  this.springValue.setValue(0.3)
+  Animated.spring(
+    this.springValue,
+    {
+      toValue: 1,
+      friction: 1
+    }
+  ).start()
+}
+}
+
+class BackgroundLines extends Component {
+  constructor(){
+    super()
+    this.spinValue = new Animated.Value(0)
+  this.scaleValue = new Animated.Value(0)
+  }
+  
+    render() {
+      const spin = this.spinValue.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '360deg']
   })
@@ -45,23 +85,23 @@ export default class Chiguru extends Component {
     inputRange: [0, 0.5, 1],
     outputRange: [1, 1.1, 1]
   })
-    return (
-      <BackgroundImage>
-        <Animated.Image
+        return (
+            <Animated.Image
         style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover',
           transform: [{rotate: spin},{scale: scaleText}] }}
-          source={require('./images/sp_lines.png')} />
-      </BackgroundImage>
-    );
-  }
-  componentDidMount () {
-  this.spin()
+          source={require('./images/sp_lines.png')}>
+
+          </Animated.Image>
+        );
+    }
+      componentDidMount () {
+  this.animation()
 }
-spin () {
+animation () {
   this.spinValue.setValue(0)
   this.scaleValue.setValue(0)
   const createAnimation = function (value, duration, easing, delay = 0) {
@@ -91,6 +131,23 @@ spin () {
            
   ]).start()
 }
+}
+
+
+
+export default class Chiguru extends Component {
+  render() {
+  
+    return (
+      <BackgroundImage>
+        <BackgroundTest>
+        <BackgroundLines>
+          </BackgroundLines>
+          </BackgroundTest>         
+      </BackgroundImage>
+    );
+  }
+
 }
 
 const styles = StyleSheet.create({
