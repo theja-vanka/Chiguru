@@ -34,17 +34,45 @@ class BackgroundImage extends Component {
 }
 
 class BackgroundButton extends Component {
+  constructor () {
+  super()
+  this.opacityValue = new Animated.Value(0)
+}
   
     render() {
+      const opacity = this.opacityValue.interpolate({
+    inputRange: [0, 0.5, 1],
+    outputRange: [0, 1, 0]
+  })
         return (
-         <View style={styles.container}>
+           <Animated.View
+        style={{
+          opacity,
+          flex: 1,
+    
+    backgroundColor: 'rgba(0,0,0,0)'}} >
               <Button
   title='Tap Here'
   backgroundColor='rgba(0,0,0,0)' />
   {this.props.children}
-              </View>
+  </Animated.View>
         );
     }
+    componentDidMount () {
+  this.animate1()
+}
+animate1 () {
+  this.opacityValue.setValue(0)
+  Animated.timing(
+    this.opacityValue,
+    {
+      toValue: 1,
+      duration: 2000,
+      delay: 1000,
+      easing: Easing.linear
+    }
+  ).start(() => this.animate1())
+}
 }
 class BackgroundCitech extends Component {
   
