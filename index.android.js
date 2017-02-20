@@ -52,6 +52,7 @@ class BackgroundButton extends Component {
     
     backgroundColor: 'rgba(0,0,0,0)'}} >
               <Button
+              icon={{name: 'touch-app'}}
   title='Tap Here'
   backgroundColor='rgba(0,0,0,0)' />
   {this.props.children}
