@@ -45,6 +45,7 @@ class BackgroundButton extends Component {
   super()
   this.opacityValue = new Animated.Value(0)
 }
+
  
     render() {
       const opacity = this.opacityValue.interpolate({
@@ -59,11 +60,11 @@ class BackgroundButton extends Component {
           flex: 1,
     
     backgroundColor: 'rgba(0,0,0,0)'}} >
-    <TouchableWithoutFeedback onPress={this._handlePress}>
+    <TouchableWithoutFeedback>
               <View><Button
               icon={{name: 'touch-app'}}
   title='Tap Here'
-  backgroundColor='rgba(0,0,0,0)' />
+  backgroundColor='rgba(0,0,0,0)' onPress={this._handlePress}/>
 </View>
    </TouchableWithoutFeedback>
   
@@ -72,6 +73,7 @@ class BackgroundButton extends Component {
   
  
         );
+        
     }
     componentDidMount () {
   this.animate1()
@@ -191,7 +193,7 @@ class Chiguru1 extends Component {
        </BackgroundCitech>
         <BackgroundLines>
             </BackgroundLines>
-                 <BackgroundButton>
+                 <BackgroundButton navigator={this.props.navigator}>
                    </BackgroundButton>
           </BackgroundTest>         
       </BackgroundImage>
@@ -208,12 +210,17 @@ export default class Chiguru extends Component {
       return <Home navigator={navigator} />
     }
   }
+  configureScene(route, routeStack){
+   return Navigator.SceneConfigs.VerticalUpSwipeJump
+}
   render() {
   
     return (
       <Navigator
+      configureScene={ this.configureScene }
         initialRoute={{id: 1, }}
-        renderScene={this._renderScene} />
+        renderScene={this._renderScene} 
+        navigator={navigator} />
     );
   }
 

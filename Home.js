@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, Navigator, TouchableHighlight } from 'react-native';
+import { View, Text, Navigator, TouchableWithoutFeedback } from 'react-native';
 
 export default class Home extends Component {
   static get defaultProps() {
@@ -8,11 +8,17 @@ export default class Home extends Component {
     };
   }
 
+  goBack = () => {
+    this.props.navigator.pop();
+  };
+
   render() {
     return (
-      <View>
-        <Text>Home</Text>
-      </View>
+      <TouchableWithoutFeedback>
+        <View>
+          <Text onPress={this.goBack}>Home</Text>
+        </View>
+      </TouchableWithoutFeedback>
     )
   }
 }
