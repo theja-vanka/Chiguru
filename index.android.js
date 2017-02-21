@@ -12,12 +12,16 @@ import {
   View,
   Image,
   Animated,
-  Easing
+  Easing,
+  Navigator,
+  TouchableWithoutFeedback
 } from 'react-native';
 
 import {
   Button
 } from 'react-native-elements';
+
+import Home from './Home'
 
 class BackgroundImage extends Component {
   
@@ -34,29 +38,39 @@ class BackgroundImage extends Component {
 }
 
 class BackgroundButton extends Component {
+   _handlePress = () => {
+     this.props.navigator.push({id: 2,});
+    };
   constructor () {
   super()
   this.opacityValue = new Animated.Value(0)
 }
-  
+ 
     render() {
       const opacity = this.opacityValue.interpolate({
     inputRange: [0, 0.5, 1],
     outputRange: [0, 1, 0]
   })
         return (
+          
            <Animated.View
         style={{
           opacity,
           flex: 1,
     
     backgroundColor: 'rgba(0,0,0,0)'}} >
-              <Button
+    <TouchableWithoutFeedback onPress={this._handlePress}>
+              <View><Button
               icon={{name: 'touch-app'}}
   title='Tap Here'
   backgroundColor='rgba(0,0,0,0)' />
-  {this.props.children}
+</View>
+   </TouchableWithoutFeedback>
+  
+   {this.props.children}
   </Animated.View>
+  
+ 
         );
     }
     componentDidMount () {
@@ -167,7 +181,7 @@ animation () {
 
 
 
-export default class Chiguru extends Component {
+class Chiguru1 extends Component {
   render() {
   
     return (
@@ -181,6 +195,25 @@ export default class Chiguru extends Component {
                    </BackgroundButton>
           </BackgroundTest>         
       </BackgroundImage>
+    );
+  }
+
+}
+
+export default class Chiguru extends Component {
+  _renderScene(route, navigator) {
+    if (route.id === 1) {
+      return <Chiguru1 navigator={navigator} />
+    } else if (route.id === 2) {
+      return <Home navigator={navigator} />
+    }
+  }
+  render() {
+  
+    return (
+      <Navigator
+        initialRoute={{id: 1, }}
+        renderScene={this._renderScene} />
     );
   }
 
