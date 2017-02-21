@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, Navigator, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 export default class Home extends Component {
   static get defaultProps() {
@@ -7,6 +7,10 @@ export default class Home extends Component {
       title: 'Home'
     };
   }
+  onBackPress(){
+    this.props.navigator.pop();
+    return true; 
+}
 
   goBack = () => {
     this.props.navigator.pop();
@@ -21,4 +25,7 @@ export default class Home extends Component {
       </TouchableWithoutFeedback>
     )
   }
+  componentDidMount() {
+    BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
+}
 }
