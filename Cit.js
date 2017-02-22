@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Image, StyleSheet, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, Image, StyleSheet, Animated, Easing, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 
 
@@ -18,82 +18,273 @@ class BackgroundImage extends Component {
 }
 
 class BackgroundBotImageR3 extends Component {
+    constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+}
   
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [100, 0]
+  })
         return (
-            <Image source={require('./images/blue.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
+             <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/blue.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 1000,
+      easing: Easing.linear
+    }
+  ).start()
+
+  
+
+
+}
 }
 class BackgroundBotImageR2 extends Component {
+    constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+}
   
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [100, 0]
+  })
         return (
-            <Image source={require('./images/pur.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/pur.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 1000,
+      delay: 500,
+      easing: Easing.linear
+    }
+  ).start()
+
+  
+
+
+}
 }
 class BackgroundBotImageR1 extends Component {
+    constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+}
   
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [100, 0]
+  })
         return (
-            <Image source={require('./images/yel.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/yel.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 1000,
+      delay: 500,
+      easing: Easing.linear
+    }
+  ).start()
+
+  
+
+
+}
 }
 class BackgroundBotImageL3 extends Component {
-  
+  constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+}
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [-100, 0]
+  })
         return (
-            <Image source={require('./images/ora.png')}
-                  style={styles.backgroundImage}>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/ora.png')}>
+                    {this.props.children}
+          </Animated.Image>
 
-                  {this.props.children}
-
-            </Image>
+            
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 1000,
+      easing: Easing.linear
+    }
+  ).start()
+
+  
+
+
+}
 }
 class BackgroundBotImageL2 extends Component {
+      constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+}
   
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [-100, 0]
+  })
         return (
-            <Image source={require('./images/red.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/red.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 1000,
+      delay : 500,
+      easing: Easing.linear
+    }
+  ).start()
+
+  
+
+
+}
 }
 class BackgroundBotImageL1 extends Component {
+     constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+}
   
     render() {
+         const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [-100, 0]
+  })
         return (
-            <Image source={require('./images/gre.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/gre.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 1000,
+      delay : 500,
+      easing: Easing.linear
+    }
+  ).start()
+
+  
+
+
+}
 }
 
 

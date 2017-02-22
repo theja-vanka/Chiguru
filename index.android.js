@@ -179,7 +179,7 @@ animation () {
     createSpin(this.spinValue, 40000, Easing.linear),
     createAnimation(this.scaleValue, 2000, Easing.linear, 1000)
            
-  ]).start()
+  ]).start(() => this.animation())
 }
 }
 
