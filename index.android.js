@@ -21,7 +21,9 @@ import {
   Button
 } from 'react-native-elements';
 
-import Home from './Home'
+import Home from './Home';
+
+import Cit from './Cit';
 
 class BackgroundImage extends Component {
   
@@ -207,7 +209,7 @@ export default class Chiguru extends Component {
     if (route.id === 1) {
       return <Chiguru1 navigator={navigator} />
     } else if (route.id === 2) {
-      return <Home navigator={navigator} />
+      return <Cit navigator={navigator} />
     }
   }
   configureScene(route, routeStack){
