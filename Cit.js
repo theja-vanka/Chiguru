@@ -262,7 +262,7 @@ class BackgroundBotImageL2 extends Component {
           source={require('./images/red.png')}>
           
            <TouchableWithoutFeedback>
-                             <View style={styles.container}>
+                             <View style={styles.containerl}>
           <Button large onPress={this._handlePress} backgroundColor= 'rgba(0,0,0,0)'
                  title='Sponcers'/>
                  </View>
