@@ -46,7 +46,7 @@ class BackgroundBotImageR3 extends Component {
           <TouchableWithoutFeedback>
                              <View style={styles.container}>
           <Button large backgroundColor= 'rgba(0,0,0,0)'
-                 title='Contact Us'/>
+                 title='Contact Us' onPress={this._handlePress}/>
                  </View>
                  </TouchableWithoutFeedback>
                     {this.props.children}
@@ -99,7 +99,7 @@ class BackgroundBotImageR2 extends Component {
           <TouchableWithoutFeedback>
                              <View style={styles.containerr}>
           <Button large backgroundColor= 'rgba(0,0,0,0)'
-                 title='Schedule'/>
+                 title='Schedule' onPress={this._handlePress}/>
                  </View>
                  </TouchableWithoutFeedback>
                     {this.props.children}
@@ -207,7 +207,7 @@ class BackgroundBotImageL3 extends Component {
           source={require('./images/ora.png')}>
           <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button large backgroundColor= 'rgba(0,0,0,0)'
+          <Button large onPress={this._handlePress} backgroundColor= 'rgba(0,0,0,0)'
                  title='Location'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -263,7 +263,7 @@ class BackgroundBotImageL2 extends Component {
           
            <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button large backgroundColor= 'rgba(0,0,0,0)'
+          <Button large onPress={this._handlePress} backgroundColor= 'rgba(0,0,0,0)'
                  title='Sponcers'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -318,7 +318,7 @@ class BackgroundBotImageL1 extends Component {
           source={require('./images/gre.png')}>
           <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button large backgroundColor= 'rgba(0,0,0,0)'
+          <Button large onPress={this._handlePress} backgroundColor= 'rgba(0,0,0,0)'
                  title='About Us'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -368,17 +368,17 @@ export default class Cit extends Component {
         flex: 1,
         flexDirection: 'column',
       }}>
-      <BackgroundBotImageL1 />
-      <BackgroundBotImageL2 />
-      <BackgroundBotImageL3 />
+      <BackgroundBotImageL1 navigator={this.props.navigator}/>
+      <BackgroundBotImageL2 navigator={this.props.navigator}/>
+      <BackgroundBotImageL3 navigator={this.props.navigator}/>
       </View>
       <View style={{
         flex: 1,
         flexDirection: 'column',
       }}>
       <BackgroundBotImageR1 navigator={this.props.navigator}/>
-      <BackgroundBotImageR2 />
-      <BackgroundBotImageR3 />
+      <BackgroundBotImageR2 navigator={this.props.navigator}/>
+      <BackgroundBotImageR3 navigator={this.props.navigator}/>
 
        </View>
 

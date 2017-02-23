@@ -4,7 +4,7 @@ import { View, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'rea
 export default class Events extends Component {
   static get defaultProps() {
     return {
-      title: 'Home'
+      title: 'Events'
     };
   }
   onBackPress(){

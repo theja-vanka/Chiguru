@@ -25,7 +25,17 @@ import Home from './Home';
 
 import Events from './Events';
 
+import Contactus from './Contactus';
+
 import Cit from './Cit';
+
+import Aboutus from './Aboutus';
+
+import Schedule from './Schedule';
+
+import Sponcers from './Sponcers';
+
+import Location from './location';
 
 class BackgroundImage extends Component {
   
@@ -215,6 +225,22 @@ export default class Chiguru extends Component {
        />
     } else if (route.id ===3){
       return <Events navigator={navigator}/>
+      
+    }else if (route.id === 5){
+      return <Contactus navigator={navigator}/>
+      
+    }else if (route.id === 9){
+      return <Aboutus navigator={navigator}/>
+      
+    }else if (route.id === 8){
+      return <Sponcers navigator={navigator}/>
+      
+    }else if (route.id === 7){
+      return <Location navigator={navigator}/>
+      
+    }else if (route.id === 6){
+      return <Schedule navigator={navigator}/>
+      
     }
   }
   render() {
@@ -225,6 +251,16 @@ export default class Chiguru extends Component {
     if (route.id === 2) {
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     } else if (route.id === 3){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    } else if (route.id === 5){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    } else if (route.id === 6){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }else if (route.id === 7){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }else if (route.id === 8){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }else if (route.id === 9){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
   }}
