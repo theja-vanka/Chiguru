@@ -3,6 +3,8 @@ import { View, Image, StyleSheet, Animated, Easing, Text, Navigator, TouchableWi
 
 import {Button} from 'react-native-elements';
 
+import Events from './Events';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -119,6 +121,9 @@ animate () {
 }
 }
 class BackgroundBotImageR1 extends Component {
+   _handlePress = () => {
+     this.props.navigator.push({id: 3,});
+    };
     constructor () {
   super()
   this.animatedValue = new Animated.Value(0)
@@ -130,6 +135,7 @@ class BackgroundBotImageR1 extends Component {
     outputRange: [200, 0]
   })
         return (
+                    <TouchableWithoutFeedback>
             <Animated.Image
         style={{
             marginLeft,
@@ -138,15 +144,17 @@ class BackgroundBotImageR1 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
+           
           source={require('./images/yel.png')}>
-          <TouchableWithoutFeedback>
+
                              <View style={styles.container}>
           <Button backgroundColor= 'rgba(0,0,0,0)'
-                 title='Events'/>
+                 title='Events'onPress={this._handlePress}/>
                  </View>
-                 </TouchableWithoutFeedback>
+
                     {this.props.children}
           </Animated.Image>
+                           </TouchableWithoutFeedback>
         );
     }
     componentDidMount () {
@@ -326,7 +334,7 @@ animate () {
 }
 
 
-class Cit extends Component {
+export default class Cit extends Component {
 
   onBackPress(){
     this.props.navigator.pop();
@@ -336,6 +344,7 @@ class Cit extends Component {
   goBack = () => {
     this.props.navigator.pop();
   };
+  
 
   render() {
     return (
@@ -353,50 +362,7 @@ class Cit extends Component {
         flex: 1,
         flexDirection: 'column',
       }}>
-      <BackgroundBotImageR1 />
-      <BackgroundBotImageR2 />
-      <BackgroundBotImageR3 />
-
-       </View>
-
-      </View>
-          </BackgroundImage>
-                   
-                        
-    )
-  }
-  componentDidMount() {
-    BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-}
-}
-export default class Home extends Component {
-
-  onBackPress(){
-    this.props.navigator.pop();
-    return true; 
-}
-
-  goBack = () => {
-    this.props.navigator.pop();
-  };
-
-  render() {
-    return (
-      <BackgroundImage>
-          <View style={{flex: 1, flexDirection: 'row'}}>
-           <View style={{
-        flex: 1,
-        flexDirection: 'column',
-      }}>
-      <BackgroundBotImageL1 />
-      <BackgroundBotImageL2 />
-      <BackgroundBotImageL3 />
-      </View>
-      <View style={{
-        flex: 1,
-        flexDirection: 'column',
-      }}>
-      <BackgroundBotImageR1 />
+      <BackgroundBotImageR1 navigator={this.props.navigator}/>
       <BackgroundBotImageR2 />
       <BackgroundBotImageR3 />
 

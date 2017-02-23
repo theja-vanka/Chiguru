@@ -23,6 +23,8 @@ import {
 
 import Home from './Home';
 
+import Events from './Events';
+
 import Cit from './Cit';
 
 class BackgroundImage extends Component {
@@ -209,17 +211,23 @@ export default class Chiguru extends Component {
     if (route.id === 1) {
       return <Chiguru1 navigator={navigator} />
     } else if (route.id === 2) {
-      return <Cit navigator={navigator} />
+      return <Cit navigator={navigator}
+       />
+    } else if (route.id ===3){
+      return <Events navigator={navigator}/>
     }
   }
-  configureScene(route, routeStack){
-   return Navigator.SceneConfigs.VerticalUpSwipeJump
-}
   render() {
   
     return (
       <Navigator
-      configureScene={ this.configureScene }
+      configureScene={(route) => {
+    if (route.id === 2) {
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    } else if (route.id === 3){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+  }}
         initialRoute={{id: 1, }}
         renderScene={this._renderScene} 
         navigator={navigator} />
