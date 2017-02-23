@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
-export default class Events extends Component {
+export default class Contactus extends Component {
   static get defaultProps() {
     return {
       title: 'Home'
@@ -20,7 +20,7 @@ export default class Events extends Component {
     return (
       <TouchableWithoutFeedback>
         <View>
-          <Text onPress={this.goBack}>Events</Text>
+          <Text onPress={this.goBack}>Contact</Text>
         </View>
       </TouchableWithoutFeedback>
     )

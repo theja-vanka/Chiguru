@@ -20,6 +20,9 @@ class BackgroundImage extends Component {
 }
 
 class BackgroundBotImageR3 extends Component {
+     _handlePress = () => {
+     this.props.navigator.push({id: 5,});
+    };
     constructor () {
   super()
   this.animatedValue = new Animated.Value(0)
@@ -42,7 +45,7 @@ class BackgroundBotImageR3 extends Component {
           source={require('./images/blue.png')}>
           <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button backgroundColor= 'rgba(0,0,0,0)'
+          <Button large backgroundColor= 'rgba(0,0,0,0)'
                  title='Contact Us'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -70,6 +73,9 @@ animate () {
 }
 }
 class BackgroundBotImageR2 extends Component {
+     _handlePress = () => {
+     this.props.navigator.push({id: 6,});
+    };
     constructor () {
   super()
   this.animatedValue = new Animated.Value(0)
@@ -91,8 +97,8 @@ class BackgroundBotImageR2 extends Component {
            }}
           source={require('./images/pur.png')}>
           <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button backgroundColor= 'rgba(0,0,0,0)'
+                             <View style={styles.containerr}>
+          <Button large backgroundColor= 'rgba(0,0,0,0)'
                  title='Schedule'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -135,7 +141,7 @@ class BackgroundBotImageR1 extends Component {
     outputRange: [200, 0]
   })
         return (
-                    <TouchableWithoutFeedback>
+                    
             <Animated.Image
         style={{
             marginLeft,
@@ -144,17 +150,16 @@ class BackgroundBotImageR1 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
-           
           source={require('./images/yel.png')}>
-
+<TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button backgroundColor= 'rgba(0,0,0,0)'
+          <Button large backgroundColor= 'rgba(0,0,0,0)'
                  title='Events'onPress={this._handlePress}/>
                  </View>
-
+</TouchableWithoutFeedback>
                     {this.props.children}
           </Animated.Image>
-                           </TouchableWithoutFeedback>
+                           
         );
     }
     componentDidMount () {
@@ -178,6 +183,9 @@ animate () {
 }
 }
 class BackgroundBotImageL3 extends Component {
+     _handlePress = () => {
+     this.props.navigator.push({id: 7,});
+    };
   constructor () {
   super()
   this.animatedValue = new Animated.Value(0)
@@ -199,7 +207,7 @@ class BackgroundBotImageL3 extends Component {
           source={require('./images/ora.png')}>
           <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button backgroundColor= 'rgba(0,0,0,0)'
+          <Button large backgroundColor= 'rgba(0,0,0,0)'
                  title='Location'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -229,6 +237,9 @@ animate () {
 }
 }
 class BackgroundBotImageL2 extends Component {
+     _handlePress = () => {
+     this.props.navigator.push({id: 8,});
+    };
       constructor () {
   super()
   this.animatedValue = new Animated.Value(0)
@@ -252,7 +263,7 @@ class BackgroundBotImageL2 extends Component {
           
            <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button backgroundColor= 'rgba(0,0,0,0)'
+          <Button large backgroundColor= 'rgba(0,0,0,0)'
                  title='Sponcers'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -282,6 +293,9 @@ animate () {
 }
 }
 class BackgroundBotImageL1 extends Component {
+     _handlePress = () => {
+     this.props.navigator.push({id: 9,});
+    };
      constructor () {
   super()
   this.animatedValue = new Animated.Value(0)
@@ -304,7 +318,7 @@ class BackgroundBotImageL1 extends Component {
           source={require('./images/gre.png')}>
           <TouchableWithoutFeedback>
                              <View style={styles.container}>
-          <Button backgroundColor= 'rgba(0,0,0,0)'
+          <Button large backgroundColor= 'rgba(0,0,0,0)'
                  title='About Us'/>
                  </View>
                  </TouchableWithoutFeedback>
@@ -383,6 +397,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems:'center',
+    justifyContent:'center',
+
+    
+    backgroundColor: 'rgba(0,0,0,0)'
+  },
+  containerr: {
+    flex: 1,
+    alignItems:'flex-end',
+    justifyContent:'center',
+
+    
+    backgroundColor: 'rgba(0,0,0,0)'
+  },
+  containerl: {
+    flex: 1,
+    alignItems:'flex-start',
     justifyContent:'center',
 
     
