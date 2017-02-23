@@ -65,7 +65,7 @@ class BackgroundButton extends Component {
     <TouchableWithoutFeedback>
               <View><Button
               icon={{name: 'touch-app'}}
-  title='Tap Here'
+  title='Get Connected'
   backgroundColor='rgba(0,0,0,0)' onPress={this._handlePress}/>
 </View>
    </TouchableWithoutFeedback>

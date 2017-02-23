@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View, Image, StyleSheet, Animated, Easing, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
-
+import {Button} from 'react-native-elements';
 
 class BackgroundImage extends Component {
   
@@ -26,7 +26,7 @@ class BackgroundBotImageR3 extends Component {
     render() {
         const marginLeft = this.animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [100, 0]
+    outputRange: [200, 0]
   })
         return (
              <Animated.Image
@@ -38,6 +38,12 @@ class BackgroundBotImageR3 extends Component {
           resizeMode: 'cover'
            }}
           source={require('./images/blue.png')}>
+          <TouchableWithoutFeedback>
+                             <View style={styles.container}>
+          <Button backgroundColor= 'rgba(0,0,0,0)'
+                 title='Contact Us'/>
+                 </View>
+                 </TouchableWithoutFeedback>
                     {this.props.children}
           </Animated.Image>
         );
@@ -51,7 +57,7 @@ animate () {
     this.animatedValue,
     {
       toValue: 1,
-      duration: 1000,
+      duration: 500,
       easing: Easing.linear
     }
   ).start()
@@ -70,7 +76,7 @@ class BackgroundBotImageR2 extends Component {
     render() {
         const marginLeft = this.animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [100, 0]
+    outputRange: [200, 0]
   })
         return (
             <Animated.Image
@@ -82,6 +88,12 @@ class BackgroundBotImageR2 extends Component {
           resizeMode: 'cover'
            }}
           source={require('./images/pur.png')}>
+          <TouchableWithoutFeedback>
+                             <View style={styles.container}>
+          <Button backgroundColor= 'rgba(0,0,0,0)'
+                 title='Schedule'/>
+                 </View>
+                 </TouchableWithoutFeedback>
                     {this.props.children}
           </Animated.Image>
         );
@@ -95,7 +107,7 @@ animate () {
     this.animatedValue,
     {
       toValue: 1,
-      duration: 1000,
+      duration: 500,
       delay: 500,
       easing: Easing.linear
     }
@@ -115,7 +127,7 @@ class BackgroundBotImageR1 extends Component {
     render() {
         const marginLeft = this.animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [100, 0]
+    outputRange: [200, 0]
   })
         return (
             <Animated.Image
@@ -127,6 +139,12 @@ class BackgroundBotImageR1 extends Component {
           resizeMode: 'cover'
            }}
           source={require('./images/yel.png')}>
+          <TouchableWithoutFeedback>
+                             <View style={styles.container}>
+          <Button backgroundColor= 'rgba(0,0,0,0)'
+                 title='Events'/>
+                 </View>
+                 </TouchableWithoutFeedback>
                     {this.props.children}
           </Animated.Image>
         );
@@ -140,8 +158,8 @@ animate () {
     this.animatedValue,
     {
       toValue: 1,
-      duration: 1000,
-      delay: 500,
+      duration: 500,
+      delay: 750,
       easing: Easing.linear
     }
   ).start()
@@ -159,7 +177,7 @@ class BackgroundBotImageL3 extends Component {
     render() {
         const marginLeft = this.animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [-100, 0]
+    outputRange: [-200, 0]
   })
         return (
             <Animated.Image
@@ -171,6 +189,12 @@ class BackgroundBotImageL3 extends Component {
           resizeMode: 'cover'
            }}
           source={require('./images/ora.png')}>
+          <TouchableWithoutFeedback>
+                             <View style={styles.container}>
+          <Button backgroundColor= 'rgba(0,0,0,0)'
+                 title='Location'/>
+                 </View>
+                 </TouchableWithoutFeedback>
                     {this.props.children}
           </Animated.Image>
 
@@ -186,7 +210,7 @@ animate () {
     this.animatedValue,
     {
       toValue: 1,
-      duration: 1000,
+      duration: 500,
       easing: Easing.linear
     }
   ).start()
@@ -205,7 +229,7 @@ class BackgroundBotImageL2 extends Component {
     render() {
         const marginLeft = this.animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [-100, 0]
+    outputRange: [-200, 0]
   })
         return (
             <Animated.Image
@@ -217,6 +241,14 @@ class BackgroundBotImageL2 extends Component {
           resizeMode: 'cover'
            }}
           source={require('./images/red.png')}>
+          
+           <TouchableWithoutFeedback>
+                             <View style={styles.container}>
+          <Button backgroundColor= 'rgba(0,0,0,0)'
+                 title='Sponcers'/>
+                 </View>
+                 </TouchableWithoutFeedback>
+  
                     {this.props.children}
           </Animated.Image>
         );
@@ -230,7 +262,7 @@ animate () {
     this.animatedValue,
     {
       toValue: 1,
-      duration: 1000,
+      duration: 500,
       delay : 500,
       easing: Easing.linear
     }
@@ -250,7 +282,7 @@ class BackgroundBotImageL1 extends Component {
     render() {
          const marginLeft = this.animatedValue.interpolate({
     inputRange: [0, 1],
-    outputRange: [-100, 0]
+    outputRange: [-200, 0]
   })
         return (
             <Animated.Image
@@ -262,6 +294,12 @@ class BackgroundBotImageL1 extends Component {
           resizeMode: 'cover'
            }}
           source={require('./images/gre.png')}>
+          <TouchableWithoutFeedback>
+                             <View style={styles.container}>
+          <Button backgroundColor= 'rgba(0,0,0,0)'
+                 title='About Us'/>
+                 </View>
+                 </TouchableWithoutFeedback>
                     {this.props.children}
           </Animated.Image>
         );
@@ -275,8 +313,8 @@ animate () {
     this.animatedValue,
     {
       toValue: 1,
-      duration: 1000,
-      delay : 500,
+      duration: 500,
+      delay : 750,
       easing: Easing.linear
     }
   ).start()
@@ -288,6 +326,49 @@ animate () {
 }
 
 
+class Cit extends Component {
+
+  onBackPress(){
+    this.props.navigator.pop();
+    return true; 
+}
+
+  goBack = () => {
+    this.props.navigator.pop();
+  };
+
+  render() {
+    return (
+      <BackgroundImage>
+          <View style={{flex: 1, flexDirection: 'row'}}>
+           <View style={{
+        flex: 1,
+        flexDirection: 'column',
+      }}>
+      <BackgroundBotImageL1 />
+      <BackgroundBotImageL2 />
+      <BackgroundBotImageL3 />
+      </View>
+      <View style={{
+        flex: 1,
+        flexDirection: 'column',
+      }}>
+      <BackgroundBotImageR1 />
+      <BackgroundBotImageR2 />
+      <BackgroundBotImageR3 />
+
+       </View>
+
+      </View>
+          </BackgroundImage>
+                   
+                        
+    )
+  }
+  componentDidMount() {
+    BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
+}
+}
 export default class Home extends Component {
 
   onBackPress(){
@@ -335,6 +416,9 @@ export default class Home extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    alignItems:'center',
+    justifyContent:'center',
+
     
     backgroundColor: 'rgba(0,0,0,0)'
   },
