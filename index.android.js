@@ -37,6 +37,8 @@ import Sponsors from './Sponsors';
 
 import Location from './location';
 
+import Fsdet from './Fsdet';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -241,6 +243,9 @@ export default class Chiguru extends Component {
     }else if (route.name === 'Schedule'){
       return <Schedule navigator={navigator}/>
       
+    }else if (route.name === 'fsdetails'){
+      return <Fsdet navigator={navigator}/>
+      
     }
   }
   render() {
@@ -251,7 +256,7 @@ export default class Chiguru extends Component {
     if (route.name === 'Cit') {
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     } else if (route.name === 'Events'){
-      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+      return Navigator.SceneConfigs.FloatFromRight;
     } else if (route.name === 'Contact'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     } else if (route.name === 'Schedule'){
@@ -262,6 +267,9 @@ export default class Chiguru extends Component {
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }else if (route.name === 'Abt'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'fsdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
   }}
         initialRoute={{name: 'Main', }}

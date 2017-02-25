@@ -1,10 +1,34 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text,Image, StyleSheet, Navigator, Dimensions,BackAndroid } from 'react-native';
+import { View,Image, StyleSheet, Navigator, Dimensions,BackAndroid } from 'react-native';
 
 import Carousel from 'react-native-looped-carousel';
 
+import {Text, Button} from 'react-native-elements';
+
 const { width, height } = Dimensions.get('window');
 
+
+class FsDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'fsdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
 
 export default class Events extends Component {
 
@@ -39,7 +63,7 @@ export default class Events extends Component {
     return (
      <View style={{ flex: 1 }} onLayout={this._onLayoutDidChange}>
         <Carousel
-          delay={2000}
+          delay={5000}
           style={this.state.size}
           autoplay
           pageInfo
@@ -50,42 +74,114 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/f_sho.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/f_sho.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text>
+         <FsDeta navigator={this.props.navigator}/>
+          </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/busi.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/busi.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
+          <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View></View></Image></View>
         </Carousel>
       </View>
     )
@@ -100,7 +196,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0)',
+    backgroundColor: 'rgba(1,1,1,0.6)',
   },
   welcome: {
     fontSize: 30,
