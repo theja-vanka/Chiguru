@@ -59,6 +59,7 @@ export default class Aboutus extends Component {
 <Text style={styles.points}>SURPRISE...SUSPENSE..and... ACTION...</Text>
   </View>
   </View>
+
   </View>
     )
   }

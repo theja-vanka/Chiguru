@@ -237,7 +237,7 @@ export default class Chiguru extends Component {
     if (route.name === 'Main') {
       return <Chiguru1 navigator={navigator} />
     } else if (route.name === 'Cit') {
-      return <Cit navigator={navigator}
+      return <Home navigator={navigator}
        />
     } else if (route.name ==='Events'){
       return <Events navigator={navigator}/>

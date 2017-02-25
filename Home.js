@@ -1,118 +1,16 @@
-import React, { Component, PropTypes } from 'react';
-import { View, Text, Navigator,
-Animated,
-Easing,
-Image,
-StyleSheet,
-TouchableWithoutFeedback,
-Button,
-BackAndroid } from 'react-native';
-
-import {Overlay} from 'react-native-overlay';
-
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Navigator,
+  BackAndroid
+} from 'react-native';
 
 class BackgroundImage extends Component {
-  
-    render() {
-        return (
-          <Overlay>
-            <Image source={require('./images/open_bg.png')}
-                  style={styles.backgroundImage}>
-
-            </Image>
-            </Overlay>
-        );
-    }
-}
-class Contact extends Component {
-  
-    render() {
-        return (
-            <Image source={require('./images/contact.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
-        );
-    }
-}
-class Locat extends Component {
-  
-    render() {
-        return (
-            <Image source={require('./images/location.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
-        );
-    }
-}
-class Spons extends Component {
-  
-    render() {
-        return (
-            <Image source={require('./images/sponsor.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
-        );
-    }
-}
-class Sche extends Component {
-  
-    render() {
-        return (
-            <Image source={require('./images/sche.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
-        );
-    }
-}
-class Eventz extends Component {
-  
-    render() {
-        return (
-            <Image source={require('./images/events.png')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
-        );
-    }
-}
-class Abtz extends Component {
-  
-    render() {
-        return (
-            <View
-                  style={styles.container}>
-
-                  {this.props.children}
-
-            </View>
-        );
-    }
-}
-
-
-
-
-export default class Home extends Component {
-  static get defaultProps() {
-    return {
-      title: 'Home'
-    };
-  }
-  onBackPress(){
+    onBackPress(){
     this.props.navigator.pop();
     return true; 
 }
@@ -120,46 +18,120 @@ export default class Home extends Component {
   goBack = () => {
     this.props.navigator.pop();
   };
+    render() {
+        return (
+            <Image source={require('./images/open_bg.png')}
+                  style={styles.backgroundImage}>
 
+          {this.props.children}
+            </Image>
+        );
+    }
+}
+
+class Backgroundhome1 extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/home1.png')}
+                  style={styles.backgroundImage}>
+          {this.props.children}
+
+            </Image>
+        );
+    }
+}
+class Backgroundhome2 extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/home2.png')}
+                  style={styles.backgroundImage}>
+          {this.props.children}
+
+            </Image>
+        );
+    }
+}
+class Backgroundhome3 extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/home3.png')}
+                  style={styles.backgroundImage}>
+          {this.props.children}
+
+            </Image>
+        );
+    }
+}
+class Backgroundhome4 extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/home4.png')}
+                  style={styles.backgroundImage}>
+          {this.props.children}
+
+            </Image>
+        );
+    }
+}
+class Backgroundhome5 extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/home5.png')}
+                  style={styles.backgroundImage}>
+          {this.props.children}
+
+            </Image>
+        );
+    }
+}
+
+export default class Theja extends Component {
   render() {
     return (
-     
-      <View style={styles.container}>
-             <BackgroundImage>   
-                   
-        <Abtz />
-          <Eventz /> 
-        <Sche />
-          <Spons />
-          <Locat />
-          <Contact />
-      
-  </ BackgroundImage>
-          </View>
-   
-    )
+    <BackgroundImage>
+    <Backgroundhome1>
+<Backgroundhome2>
+<Backgroundhome3><Backgroundhome4><Backgroundhome5>
+</Backgroundhome5></Backgroundhome4></Backgroundhome3>
+</Backgroundhome2>
+    </Backgroundhome1>
+     </BackgroundImage>
+    );
   }
-  componentDidMount() {
-    BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
-}
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0)',
   },
-  backgroundLog: {
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+   backgroundImage: {
         flex: 1,
         width: null,
         height: null,
-        resizeMode: 'cover',
+
+        resizeMode: 'cover'
     },
-    backgroundImage: {
-        flex: 1,
-        width: null,
-        height: null,
-        resizeMode: 'cover',
+    backgroundImage2: {
+        flex: 20,
+              position: 'relative',
+        backgroundColor:'rgba(0,0,0,0)'
     },
 });
