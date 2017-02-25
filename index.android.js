@@ -39,6 +39,8 @@ import Location from './location';
 
 import Fsdet from './Fsdet';
 
+import Bobdeta from './bobdeta';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -246,6 +248,9 @@ export default class Chiguru extends Component {
     }else if (route.name === 'fsdetails'){
       return <Fsdet navigator={navigator}/>
       
+    }else if (route.name === 'bobdetails'){
+      return <Bobdeta navigator={navigator}/>
+      
     }
   }
   render() {
@@ -269,6 +274,9 @@ export default class Chiguru extends Component {
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
     else if (route.name === 'fsdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'bobdetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
   }}

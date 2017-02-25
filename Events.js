@@ -29,6 +29,28 @@ class FsDeta extends Component {
         );
     }
 }
+class BobDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'bobdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
 
 export default class Events extends Component {
 
@@ -82,106 +104,46 @@ export default class Events extends Component {
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text>
-          <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
-            </View></View></Image></View>
+        <BobDeta navigator={this.props.navigator}/>        
+         </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
-          <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
-            </View></View></Image></View>
+          </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text>
-          <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
-            </View></View></Image></View>
+         </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
-          <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
-            </View></View></Image></View>
+         </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
-          <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
-            </View></View></Image></View>
+          </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/busi.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
           <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
+         
             </View></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
-          <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}}
-                 title='Details'>
-            
-            </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
-                 title='Contact'>
-            
-            </Button>
-            </View></View></Image></View>
+          </View></Image></View>
         </Carousel>
       </View>
     )
