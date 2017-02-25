@@ -6,18 +6,16 @@ import {
   View,
   Image,
   Navigator,
-  BackAndroid
+  BackAndroid,
+  Animated,
+  Easing,
+  TouchableWithoutFeedback
 } from 'react-native';
 
-class BackgroundImage extends Component {
-    onBackPress(){
-    this.props.navigator.pop();
-    return true; 
-}
+import {Button} from 'react-native-elements';
 
-  goBack = () => {
-    this.props.navigator.pop();
-  };
+class BackgroundImage extends Component {
+   
     render() {
         return (
             <Image source={require('./images/open_bg.png')}
@@ -31,78 +29,240 @@ class BackgroundImage extends Component {
 
 class Backgroundhome1 extends Component {
   
+   constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+    }
+  
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [400, 0]
+  })
         return (
-            <Image source={require('./images/home1.png')}
-                  style={styles.backgroundImage}>
-          {this.props.children}
-
-            </Image>
+           <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/home1.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 500,
+            delay: 700,
+      easing: Easing.linear
+    }
+  ).start()
+}
 }
 class Backgroundhome2 extends Component {
   
+    constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+    }
+  
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [400, 0]
+  })
         return (
-            <Image source={require('./images/home2.png')}
-                  style={styles.backgroundImage}>
-          {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/home2.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 500,
+            delay: 600,
+      easing: Easing.linear
+    }
+  ).start()
+}
 }
 class Backgroundhome3 extends Component {
   
+   constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+    }
+  
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [400, 0]
+  })
         return (
-            <Image source={require('./images/home3.png')}
-                  style={styles.backgroundImage}>
-          {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/home3.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 500,
+            delay: 500,
+      easing: Easing.linear
+    }
+  ).start()
+}
 }
 class Backgroundhome4 extends Component {
+    constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+    }
   
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [400, 0]
+  })
         return (
-            <Image source={require('./images/home4.png')}
-                  style={styles.backgroundImage}>
-          {this.props.children}
-
-            </Image>
+            <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/home4.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
     }
+    componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 500,
+      delay: 500,
+      easing: Easing.linear
+    }
+  ).start()
+}
 }
 class Backgroundhome5 extends Component {
+    constructor () {
+  super()
+  this.animatedValue = new Animated.Value(0)
+    }
   
     render() {
+        const marginLeft = this.animatedValue.interpolate({
+    inputRange: [0, 1],
+    outputRange: [400, 0]
+  })
         return (
-            <Image source={require('./images/home5.png')}
-                  style={styles.backgroundImage}>
-          {this.props.children}
-
-            </Image>
+           <Animated.Image
+        style={{
+            marginLeft,
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover'
+           }}
+          source={require('./images/home5.png')}>
+                    {this.props.children}
+          </Animated.Image>
         );
+    } componentDidMount () {
+  this.animate()
+}
+animate () {
+  this.animatedValue.setValue(0)
+  Animated.timing(
+    this.animatedValue,
+    {
+      toValue: 1,
+      duration: 500,
+      easing: Easing.linear
     }
+  ).start()
+}
 }
 
-export default class Theja extends Component {
+export default class Home extends Component {
+     static get defaultProps() {
+    return {
+      title: 'Home'
+    };
+  }
+    onBackPress(){
+    this.props.navigator.pop();
+    return true; 
+}
+
+  goBack = () => {
+    this.props.navigator.pop();
+  };
   render() {
     return (
     <BackgroundImage>
-    <Backgroundhome1>
-<Backgroundhome2>
-<Backgroundhome3><Backgroundhome4><Backgroundhome5>
-</Backgroundhome5></Backgroundhome4></Backgroundhome3>
-</Backgroundhome2>
-    </Backgroundhome1>
+    <Backgroundhome5>
+<Backgroundhome4>
+<Backgroundhome3><Backgroundhome2><Backgroundhome1>
+</Backgroundhome1></Backgroundhome2></Backgroundhome3>
+</Backgroundhome4>
+    </Backgroundhome5>
      </BackgroundImage>
     );
   }
+   componentDidMount() {
+    BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
+}
 }
 
 const styles = StyleSheet.create({
