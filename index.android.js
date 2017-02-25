@@ -33,7 +33,7 @@ import Aboutus from './Aboutus';
 
 import Schedule from './Schedule';
 
-import Sponcers from './Sponcers';
+import Sponsors from './Sponsors';
 
 import Location from './location';
 
@@ -233,7 +233,7 @@ export default class Chiguru extends Component {
       return <Aboutus navigator={navigator}/>
       
     }else if (route.id === 8){
-      return <Sponcers navigator={navigator}/>
+      return <Sponsors navigator={navigator}/>
       
     }else if (route.id === 7){
       return <Location navigator={navigator}/>

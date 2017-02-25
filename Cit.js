@@ -264,7 +264,7 @@ class BackgroundBotImageL2 extends Component {
            <TouchableWithoutFeedback>
                              <View style={styles.containerl}>
           <Button large onPress={this._handlePress} backgroundColor= 'rgba(0,0,0,0)'
-                 title='Sponcers'/>
+                 title='Sponsors'/>
                  </View>
                  </TouchableWithoutFeedback>
   

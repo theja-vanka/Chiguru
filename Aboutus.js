@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, Text, Navigator, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 export default class Aboutus extends Component {
   static get defaultProps() {
@@ -19,7 +19,7 @@ export default class Aboutus extends Component {
   render() {
     return (
       <TouchableWithoutFeedback>
-        <View>
+        <View style={styles.container}>
           <Text onPress={this.goBack}>About</Text>
         </View>
       </TouchableWithoutFeedback>
@@ -29,3 +29,12 @@ export default class Aboutus extends Component {
     BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
 }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#100F20',
+  },
+});
