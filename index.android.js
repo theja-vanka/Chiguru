@@ -53,7 +53,7 @@ class BackgroundImage extends Component {
 
 class BackgroundButton extends Component {
    _handlePress = () => {
-     this.props.navigator.push({id: 2,});
+     this.props.navigator.push({name: 'Cit',});
     };
   constructor () {
   super()
@@ -218,27 +218,27 @@ class Chiguru1 extends Component {
 
 export default class Chiguru extends Component {
   _renderScene(route, navigator) {
-    if (route.id === 1) {
+    if (route.name === 'Main') {
       return <Chiguru1 navigator={navigator} />
-    } else if (route.id === 2) {
+    } else if (route.name === 'Cit') {
       return <Cit navigator={navigator}
        />
-    } else if (route.id ===3){
+    } else if (route.name ==='Events'){
       return <Events navigator={navigator}/>
       
-    }else if (route.id === 5){
+    }else if (route.name === 'Contact'){
       return <Contactus navigator={navigator}/>
       
-    }else if (route.id === 9){
+    }else if (route.name ==='Abt'){
       return <Aboutus navigator={navigator}/>
       
-    }else if (route.id === 8){
+    }else if (route.name === 'Sponsor'){
       return <Sponsors navigator={navigator}/>
       
-    }else if (route.id === 7){
+    }else if (route.name === 'Loc'){
       return <Location navigator={navigator}/>
       
-    }else if (route.id === 6){
+    }else if (route.name === 'Schedule'){
       return <Schedule navigator={navigator}/>
       
     }
@@ -248,23 +248,23 @@ export default class Chiguru extends Component {
     return (
       <Navigator
       configureScene={(route) => {
-    if (route.id === 2) {
+    if (route.name === 'Cit') {
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
-    } else if (route.id === 3){
+    } else if (route.name === 'Events'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-    } else if (route.id === 5){
+    } else if (route.name === 'Contact'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-    } else if (route.id === 6){
+    } else if (route.name === 'Schedule'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-    }else if (route.id === 7){
+    }else if (route.name === 'Loc'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-    }else if (route.id === 8){
+    }else if (route.name === 'Sponsor'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
-    }else if (route.id === 9){
+    }else if (route.name === 'Abt'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
   }}
-        initialRoute={{id: 1, }}
+        initialRoute={{name: 'Main', }}
         renderScene={this._renderScene} 
         navigator={navigator} />
     );

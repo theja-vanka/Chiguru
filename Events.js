@@ -50,42 +50,42 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/f_show.jpg')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/f_sho.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/bobo.jpg')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/dan.jpg')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/sports.jpg')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/art.jpg')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/gam.jpg')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/busi.jpg')}><View style={styles.container}><Text style={styles.welcome}>Business </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/busi.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text></View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/lit.jpg')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text></View></Image></View>
+          resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text></View></Image></View>
         </Carousel>
       </View>
     )

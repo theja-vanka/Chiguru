@@ -21,7 +21,7 @@ class BackgroundImage extends Component {
 
 class BackgroundBotImageR3 extends Component {
      _handlePress = () => {
-     this.props.navigator.push({id: 5,});
+     this.props.navigator.push({name: 'Contact',});
     };
     constructor () {
   super()
@@ -74,7 +74,7 @@ animate () {
 }
 class BackgroundBotImageR2 extends Component {
      _handlePress = () => {
-     this.props.navigator.push({id: 6,});
+     this.props.navigator.push({name: 'Schedule',});
     };
     constructor () {
   super()
@@ -128,7 +128,7 @@ animate () {
 }
 class BackgroundBotImageR1 extends Component {
    _handlePress = () => {
-     this.props.navigator.push({id: 3,});
+     this.props.navigator.push({name: 'Events',});
     };
     constructor () {
   super()
@@ -184,7 +184,7 @@ animate () {
 }
 class BackgroundBotImageL3 extends Component {
      _handlePress = () => {
-     this.props.navigator.push({id: 7,});
+     this.props.navigator.push({name: 'Loc',});
     };
   constructor () {
   super()
@@ -238,7 +238,7 @@ animate () {
 }
 class BackgroundBotImageL2 extends Component {
      _handlePress = () => {
-     this.props.navigator.push({id: 8,});
+     this.props.navigator.push({name: 'Sponsor',});
     };
       constructor () {
   super()
@@ -294,7 +294,7 @@ animate () {
 }
 class BackgroundBotImageL1 extends Component {
      _handlePress = () => {
-     this.props.navigator.push({id: 9,});
+     this.props.navigator.push({name: 'Abt',});
     };
      constructor () {
   super()
