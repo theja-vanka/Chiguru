@@ -51,6 +51,138 @@ class BobDeta extends Component {
     }
 }
 
+class EntDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'entdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+class SpoDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'spodetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+class ArtDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'artdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+class GmeDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'gmedetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+class BusDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'busdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+class LitDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'litdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Details'>
+            
+            </Button>
+             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
 
 export default class Events extends Component {
 
@@ -111,30 +243,35 @@ export default class Events extends Component {
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
+          <EntDeta navigator={this.props.navigator}/>  
           </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text>
+          <SpoDeta navigator={this.props.navigator}/>  
          </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
+          <ArtDeta navigator={this.props.navigator}/>  
          </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
+          <GmeDeta navigator={this.props.navigator}/>  
           </View></Image></View>
           <View style={[ this.state.size]}><Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/busi.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
+          <BusDeta navigator={this.props.navigator}/>  
           <View style={{flexDirection: 'row'}}>
          
             </View></View></Image></View>
@@ -143,6 +280,7 @@ export default class Events extends Component {
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
+          <LitDeta navigator={this.props.navigator}/>  
           </View></Image></View>
         </Carousel>
       </View>

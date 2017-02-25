@@ -41,6 +41,18 @@ import Fsdet from './Fsdet';
 
 import Bobdeta from './bobdeta';
 
+import Entdeta from './entdeta';
+
+import Spodeta from './spodeta';
+
+import Artdeta from './artdeta';
+
+import Gmedeta from './gmedeta';
+
+import Busdeta from './busdeta';
+
+import Litdeta from './litdeta';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -251,6 +263,24 @@ export default class Chiguru extends Component {
     }else if (route.name === 'bobdetails'){
       return <Bobdeta navigator={navigator}/>
       
+    }else if (route.name === 'entdetails'){
+      return <Entdeta navigator={navigator}/>
+      
+    }else if (route.name === 'spodetails'){
+      return <Spodeta navigator={navigator}/>
+      
+    }else if (route.name === 'artdetails'){
+      return <Artdeta navigator={navigator}/>
+      
+    }else if (route.name === 'gmedetails'){
+      return <Gmedeta navigator={navigator}/>
+      
+    }else if (route.name === 'busdetails'){
+      return <Busdeta navigator={navigator}/>
+      
+    }else if (route.name === 'litdetails'){
+      return <Litdeta navigator={navigator}/>
+      
     }
   }
   render() {
@@ -277,6 +307,24 @@ export default class Chiguru extends Component {
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
     else if (route.name === 'bobdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'entdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'spodetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'artdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'gmedetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'busdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'litdetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
   }}
