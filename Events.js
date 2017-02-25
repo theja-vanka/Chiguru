@@ -17,11 +17,11 @@ class FsDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
                  title='Details'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -38,11 +38,11 @@ class BobDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
                  title='Details'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -60,11 +60,11 @@ class EntDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
-                 title='Details'>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -82,11 +82,11 @@ class SpoDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
-                 title='Details'>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -104,11 +104,11 @@ class ArtDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
-                 title='Details'>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -126,11 +126,11 @@ class GmeDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
-                 title='Details'>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -148,11 +148,11 @@ class BusDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
-                 title='Details'>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
@@ -170,11 +170,11 @@ class LitDeta extends Component {
     render() {
         return (
              <View style={{flexDirection: 'row'}}>
-          <Button backgroundColor= '#3670a2' icon={{name: 'assignment'}} onPress={this._handlePress}
-                 title='Details'>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
             
             </Button>
-             <Button backgroundColor= '#3670a2' icon={{name: 'perm-phone-msg'}}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
                  title='Contact'>
             
             </Button>
