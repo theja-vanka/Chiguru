@@ -29,6 +29,8 @@ import Contactus from './Contactus';
 
 import Cit from './Cit';
 
+import Try from './try';
+
 import Aboutus from './Aboutus';
 
 import Schedule from './Schedule';

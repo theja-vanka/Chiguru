@@ -12,7 +12,7 @@ import {
   TouchableWithoutFeedback
 } from 'react-native';
 
-import {Button, Icon} from 'react-native-elements';
+import {Button} from 'react-native-elements';
 
 class BackgroundImage extends Component {
    
@@ -26,26 +26,19 @@ class BackgroundImage extends Component {
         );
     }
 }
-
+class BackgroundCitech extends Component {
+  
+    render() {
+        return (
+         <View style={styles.container}>
+              <Text style={styles.welcome}>
+                </Text>
+  {this.props.children}
+              </View>
+        );
+    }
+}
 class Backgroundhome1 extends Component {
-     _handlePressh = () => {
-     this.props.navigator.push({name: 'Abt',});
-    };
-     _handlePresssp = () => {
-     this.props.navigator.push({name: 'Sponsor',});
-    };
-     _handlePressl = () => {
-     this.props.navigator.push({name: 'Loc',});
-    };
-     _handlePresssc = () => {
-     this.props.navigator.push({name: 'Schedule',});
-    };
-     _handlePresse = () => {
-     this.props.navigator.push({name: 'Events',});
-    };
-     _handlePressc = () => {
-     this.props.navigator.push({name: 'Contact',});
-    };
   
    constructor () {
   super()
@@ -66,45 +59,8 @@ class Backgroundhome1 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
-          source={require('./images/home1.png')}>
+          source={require('./images/sponsor.png')}>
                     {this.props.children}
-                    <TouchableWithoutFeedback>
-                             <View style={styles.container1}>
-          <Icon 
-                name='home'  reverse color='#517fa4' backgroundColor= 'rgba(0,0,0,0)'
-                  onPress={this._handlePressh}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button 
-                 title='Sponsors' backgroundColor='rgba(1,1,1,0.5)' onPress={this._handlePresssp}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Location' onPress={this._handlePressl}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Schedule' onPress={this._handlePresssc}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                  <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Events' onPress={this._handlePresse}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Contact Us' onPress={this._handlePressc}/>
-                 </View>
-                 </TouchableWithoutFeedback>
           </Animated.Image>
         );
     }
@@ -145,7 +101,7 @@ class Backgroundhome2 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
-          source={require('./images/home2.png')}>
+          source={require('./images/sponsor.png')}>
                     {this.props.children}
           </Animated.Image>
         );
@@ -187,7 +143,7 @@ class Backgroundhome3 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
-          source={require('./images/home3.png')}>
+          source={require('./images/sponsor.png')}>
                     {this.props.children}
           </Animated.Image>
         );
@@ -228,7 +184,7 @@ class Backgroundhome4 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
-          source={require('./images/home4.png')}>
+          source={require('./images/sponsor.png')}>
                     {this.props.children}
           </Animated.Image>
         );
@@ -269,7 +225,7 @@ class Backgroundhome5 extends Component {
           height: null,
           resizeMode: 'cover'
            }}
-          source={require('./images/home5.png')}>
+          source={require('./images/sponsor.png')}>
                     {this.props.children}
           </Animated.Image>
         );
@@ -289,10 +245,7 @@ animate () {
 }
 }
 
-export default class Home extends Component {
-     _handlePress = () => {
-     this.props.navigator.push({name: 'Contact',});
-    };
+export default class Try extends Component {
      static get defaultProps() {
     return {
       title: 'Home'
@@ -309,12 +262,8 @@ export default class Home extends Component {
   render() {
     return (
     <BackgroundImage>
-    <Backgroundhome5>
-<Backgroundhome4>
-<Backgroundhome3><Backgroundhome2><Backgroundhome1 navigator={this.props.navigator}>
-</Backgroundhome1  ></Backgroundhome2></Backgroundhome3>
-</Backgroundhome4>
-    </Backgroundhome5 >
+
+  <Backgroundhome1 />
      </BackgroundImage>
     );
   }
@@ -324,17 +273,10 @@ export default class Home extends Component {
 }
 
 const styles = StyleSheet.create({
-  container1: {
-    flex: 5,
-    marginLeft : 10,
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    backgroundColor: 'rgba(0,0,0,0)',
-  },
   container: {
-    flex: 4,
+    flex: 1,
     justifyContent: 'center',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0)',
   },
   welcome: {
@@ -349,6 +291,13 @@ const styles = StyleSheet.create({
   },
    backgroundImage: {
         flex: 1,
+        width: null,
+        height: null,
+
+        resizeMode: 'cover'
+    },
+      backgroundImagex: {
+        flex: 5,
         width: null,
         height: null,
 
