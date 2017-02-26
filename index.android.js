@@ -55,6 +55,10 @@ import Busdeta from './busdeta';
 
 import Litdeta from './litdeta';
 
+import Dandeta from './dandeta';
+
+import Musdeta from './musdeta';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -284,6 +288,14 @@ export default class Chiguru extends Component {
       return <Litdeta navigator={navigator}/>
       
     }
+    else if (route.name === 'dandetails'){
+      return <Dandeta navigator={navigator}/>
+      
+    }
+    else if (route.name === 'musdetails'){
+      return <Musdeta navigator={navigator}/>
+      
+    }
   }
   render() {
   
@@ -327,6 +339,12 @@ export default class Chiguru extends Component {
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
     else if (route.name === 'litdetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'dandetails'){
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+     else if (route.name === 'musdetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
   }}

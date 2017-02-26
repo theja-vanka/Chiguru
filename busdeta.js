@@ -1,13 +1,15 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Navigator, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, Navigator, ScrollView, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
-import {Text} from 'react-native-elements';
+import {Text, Card, Button} from 'react-native-elements';
 export default class Busdeta extends Component {
   static get defaultProps() {
     return {
       title: 'Events'
     };
   }
+
+  
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -19,18 +21,77 @@ export default class Busdeta extends Component {
 
   render() {
     return (
-<View style={styles.container}><Text style={styles.welcome}>Rules</Text>
-<Text style={styles.points}>Each team must have a theme.</Text>
-<Text style={styles.points}>A team must consist of minimum 10 members and a maximum of 14 members inclusive of one for music and another for lighting. </Text>
-<Text style={styles.points}>Only one team can participate from a college.</Text>
-<Text style={styles.points}>Any form of obscenity will lead to disqualification of the team</Text>
-<Text style={styles.points}>Time allotted: 7+1 minutes</Text>
-<Text style={styles.points}>Registration fee: Rs.2000.</Text>
-<Text style={styles.points}>Winners: Rs.35000.</Text>
-<Text style={styles.points}>Runners up: Rs.20000.</Text>
+      <ScrollView>
+
+<Card
+  title='Best Manager'
+  image={require('./images/aircrash.png')}
+  wrapperstyle>
+  <Text style={{marginBottom: 10}}>
+    Prove youself worthy to survive.
+  </Text>
+  <Button
+    icon={{name: 'code'}}
+    backgroundColor='#03A9F4'
+    fontFamily='Lato'
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Business Plan'
+  image={require('./images/mime.png')}>
+  <Text style={{marginBottom: 10}}>
+    Actions. Are you up for challenege ??
+  </Text>
+  <Button
+    icon={{name: 'code'}}
+    backgroundColor='#03A9F4'
+    fontFamily='Lato'
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Business Quiz'
+  image={require('./images/home1.png')}>
+  <Text style={{marginBottom: 10}}>
+    The idea with React Native Elements is more about component structure than actual design.
+  </Text>
+  <Button
+    icon={{name: 'code'}}
+    backgroundColor='#03A9F4'
+    fontFamily='Lato'
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='VIEW NOW' />
+</Card>
+<Card
+  title='Case Analysis'
+  image={require('./images/home1.png')}>
+  <Text style={{marginBottom: 10}}>
+    The idea with React Native Elements is more about component structure than actual design.
+  </Text>
+  <Button
+    icon={{name: 'code'}}
+    backgroundColor='#03A9F4'
+    fontFamily='Lato'
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='VIEW NOW' />
+</Card>
+<Card
+  title='Product Launch'
+  image={require('./images/home1.png')}>
+  <Text style={{marginBottom: 10}}>
+    The idea with React Native Elements is more about component structure than actual design.
+  </Text>
+  <Button
+    icon={{name: 'code'}}
+    backgroundColor='#03A9F4'
+    fontFamily='Lato'
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='VIEW NOW' />
+</Card>
 
 
-          </View>
+          </ScrollView>
     )
   }
   componentDidMount() {

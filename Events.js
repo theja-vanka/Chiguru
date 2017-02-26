@@ -183,6 +183,51 @@ class LitDeta extends Component {
     }
 }
 
+class DanDeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'dandetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
+            
+            </Button>
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+class Musdeta extends Component {
+         _handlePress = () => {
+     this.props.navigator.push({name: 'musdetails',});
+    };
+    
+
+    render() {
+        return (
+             <View style={{flexDirection: 'row'}}>
+          <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'assignment'}} onPress={this._handlePress}
+                 title='Explore'>
+            
+            </Button>
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}}
+                 title='Contact'>
+            
+            </Button>
+            </View>
+        );
+    }
+}
+
+
 
 export default class Events extends Component {
 
@@ -217,8 +262,9 @@ export default class Events extends Component {
   render() {
     return (
      <View style={{ flex: 1 }} onLayout={this._onLayoutDidChange}>
+         
         <Carousel
-          delay={5000}
+          delay={3000}
           style={this.state.size}
           autoplay
           bullets
@@ -242,6 +288,24 @@ export default class Events extends Component {
           resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text>
         <BobDeta navigator={this.props.navigator}/>        
          </View></Image></View>
+
+         <View style={[ this.state.size]}>
+              <Image style={{
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Dance </Text>
+          <DanDeta navigator={this.props.navigator}/>  
+          </View></Image></View>
+
+          <View style={[ this.state.size]}>
+              <Image style={{
+          flex: 1,
+          width: null,
+          height: null,
+          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Musical </Text>
+          <Musdeta navigator={this.props.navigator}/>  
+          </View></Image></View>
 
           <View style={[ this.state.size]}>
               <Image style={{
@@ -298,6 +362,8 @@ export default class Events extends Component {
           resizeMode: 'cover' }} source={require('./images/lit1.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
           <LitDeta navigator={this.props.navigator}/>  
           </View></Image></View>
+
+          
 
         </Carousel>
       </View>

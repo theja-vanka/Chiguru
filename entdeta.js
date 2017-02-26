@@ -8,6 +8,8 @@ export default class Entdeta extends Component {
       title: 'Events'
     };
   }
+
+  
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -23,7 +25,8 @@ export default class Entdeta extends Component {
 
 <Card
   title='Air Crash'
-  image={require('./images/aircrash.png')}>
+  image={require('./images/aircrash.png')}
+  wrapperstyle>
   <Text style={{marginBottom: 10}}>
     Prove youself worthy to survive.
   </Text>
@@ -35,7 +38,20 @@ export default class Entdeta extends Component {
     title='Details' />
 </Card>
 <Card
-  title='HELLO WORLD'
+  title='Mime'
+  image={require('./images/mime.png')}>
+  <Text style={{marginBottom: 10}}>
+    Actions. Are you up for challenege ??
+  </Text>
+  <Button
+    icon={{name: 'code'}}
+    backgroundColor='#03A9F4'
+    fontFamily='Lato'
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Man VS Food'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
@@ -48,7 +64,7 @@ export default class Entdeta extends Component {
     title='VIEW NOW' />
 </Card>
 <Card
-  title='HELLO WORLD'
+  title='Mock Rock'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
@@ -61,7 +77,7 @@ export default class Entdeta extends Component {
     title='VIEW NOW' />
 </Card>
 <Card
-  title='HELLO WORLD'
+  title='Minute-2-Win It'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
@@ -74,7 +90,7 @@ export default class Entdeta extends Component {
     title='VIEW NOW' />
 </Card>
 <Card
-  title='HELLO WORLD'
+  title='Movie Spoof'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
@@ -87,7 +103,7 @@ export default class Entdeta extends Component {
     title='VIEW NOW' />
 </Card>
 <Card
-  title='HELLO WORLD'
+  title='Short Films'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
@@ -100,33 +116,7 @@ export default class Entdeta extends Component {
     title='VIEW NOW' />
 </Card>
 <Card
-  title='HELLO WORLD'
-  image={require('./images/home1.png')}>
-  <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
-  <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
-</Card>
-<Card
-  title='HELLO WORLD'
-  image={require('./images/home1.png')}>
-  <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
-  <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
-</Card>
-<Card
-  title='HELLO WORLD'
+  title='Short Stories'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.

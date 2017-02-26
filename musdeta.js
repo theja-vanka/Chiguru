@@ -2,7 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { View, Navigator, ScrollView, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import {Text, Card, Button} from 'react-native-elements';
-export default class Gmedeta extends Component {
+
+
+export default class Musdeta extends Component {
   static get defaultProps() {
     return {
       title: 'Events'
@@ -24,7 +26,7 @@ export default class Gmedeta extends Component {
       <ScrollView>
 
 <Card
-  title='Counter Strike'
+  title='Beat Boxing'
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
@@ -38,7 +40,7 @@ export default class Gmedeta extends Component {
     title='Details' />
 </Card>
 <Card
-  title='FIFA'
+  title='Group Singing'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     Actions. Are you up for challenege ??
@@ -51,7 +53,7 @@ export default class Gmedeta extends Component {
     title='Details' />
 </Card>
 <Card
-  title='Mini Militia'
+  title='Single Singing'
   image={require('./images/home1.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
@@ -63,46 +65,6 @@ export default class Gmedeta extends Component {
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
-<Card
-  title='NFS'
-  image={require('./images/home1.png')}>
-  <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
-  <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
-</Card>
-<Card
-  title='Pokemon Go'
-  image={require('./images/home1.png')}>
-  <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
-  <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
-</Card>
-<Card
-  title='UNO'
-  image={require('./images/home1.png')}>
-  <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
-  <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
-</Card>
-
 
           </ScrollView>
     )
