@@ -198,6 +198,7 @@ export default class Events extends Component {
     const layout = e.nativeEvent.layout;
     this.setState({ size: { width: layout.width, height: layout.height } });
   }
+  
 
   static get defaultProps() {
     return {
@@ -220,7 +221,7 @@ export default class Events extends Component {
           delay={5000}
           style={this.state.size}
           autoplay
-          pageInfo
+          currentpage
           onAnimateNextPage={(p) => console.log(p)}
         >
           <View style={[this.state.size]}>
@@ -231,42 +232,54 @@ export default class Events extends Component {
           resizeMode: 'cover' }} source={require('./images/f_sho.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text>
          <FsDeta navigator={this.props.navigator}/>
           </View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text>
         <BobDeta navigator={this.props.navigator}/>        
          </View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
           <EntDeta navigator={this.props.navigator}/>  
           </View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text>
           <SpoDeta navigator={this.props.navigator}/>  
          </View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
           <ArtDeta navigator={this.props.navigator}/>  
          </View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
           <GmeDeta navigator={this.props.navigator}/>  
           </View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
@@ -275,13 +288,16 @@ export default class Events extends Component {
           <View style={{flexDirection: 'row'}}>
          
             </View></View></Image></View>
-          <View style={[ this.state.size]}><Image style={{
+
+          <View style={[ this.state.size]}>
+              <Image style={{
           flex: 1,
           width: null,
           height: null,
           resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
           <LitDeta navigator={this.props.navigator}/>  
           </View></Image></View>
+
         </Carousel>
       </View>
     )
