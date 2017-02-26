@@ -47,7 +47,7 @@ export default class Aboutus extends Component {
     return (
       <View style={styles.container}>
 <View style={styles.container1}>
-  <BackgroundImage />
+  <BackgroundImage/>
   </View>
   <View style={styles.container2}>
     <Text style={styles.welcome}>About Us</Text>
