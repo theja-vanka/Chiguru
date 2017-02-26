@@ -221,6 +221,7 @@ export default class Events extends Component {
           delay={5000}
           style={this.state.size}
           autoplay
+          bullets
           currentpage
           onAnimateNextPage={(p) => console.log(p)}
         >
@@ -283,7 +284,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/busi.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
+          resizeMode: 'cover' }} source={require('./images/bus.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
           <BusDeta navigator={this.props.navigator}/>  
           <View style={{flexDirection: 'row'}}>
          
@@ -294,7 +295,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/lit.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
+          resizeMode: 'cover' }} source={require('./images/lit1.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
           <LitDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
