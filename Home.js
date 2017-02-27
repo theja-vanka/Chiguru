@@ -76,6 +76,7 @@ export default class Home extends Component {
   onPress={this._handlePressa}
 
 />
+<Text style={styles.catego}>Events</Text>
 
 </View>
 <View style={styles.matchline}>
@@ -85,6 +86,7 @@ export default class Home extends Component {
   color='#e9cd1e'
     onPress={this._handlePressb}
 />
+<Text style={styles.catego}>Schedule</Text>
 </View>
 <View style={styles.matchline}>
        <Icon
@@ -93,6 +95,7 @@ export default class Home extends Component {
   color='#bf4027'
     onPress={this._handlePressc}
 />
+<Text style={styles.catego}>Location</Text>
 </View>
 <View style={styles.matchline}>
       <Icon
@@ -101,6 +104,7 @@ export default class Home extends Component {
   color='#0f8f46'
     onPress={this._handlePressd}
 /> 
+<Text style={styles.catego}>Contact Us</Text>
 </View>
           </BackgroundImage>
          
@@ -124,12 +128,19 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     backgroundColor: 'rgba(0,0,0,0)',
   },
+  catego : {
+    marginLeft : 10,
+    fontSize: 15,
+    color: 'white',
+  },
   container: {
     flex: 4,
     backgroundColor: '#353a47',
   },
   matchline: {
     flex : 1,
+    flexDirection: 'row',
+    alignItems:'center',
     margin : 10,
     backgroundColor: 'rgba(0,0,0,0)'
   },
