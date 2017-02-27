@@ -1,257 +1,14 @@
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Navigator,
-  BackAndroid,
-  Animated,
-  Easing,
-  TouchableWithoutFeedback
-} from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import { View, Navigator, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
-import {Button} from 'react-native-elements';
-
-class BackgroundImage extends Component {
-   
-    render() {
-        return (
-            <Image source={require('./images/open_bg.png')}
-                  style={styles.backgroundImage}>
-
-          {this.props.children}
-            </Image>
-        );
-    }
-}
-class BackgroundCitech extends Component {
-  
-    render() {
-        return (
-         <View style={styles.container}>
-              <Text style={styles.welcome}>
-                </Text>
-  {this.props.children}
-              </View>
-        );
-    }
-}
-class Backgroundhome1 extends Component {
-  
-   constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-           <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/sponsor.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-            delay: 700,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome2 extends Component {
-  
-    constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-            <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/sponsor.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-            delay: 600,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome3 extends Component {
-  
-   constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-            <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/sponsor.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-            delay: 500,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome4 extends Component {
-    constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-            <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/sponsor.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-      delay: 500,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome5 extends Component {
-    constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-           <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/sponsor.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    } componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-
-export default class Try extends Component {
-     static get defaultProps() {
+import {Text} from 'react-native-elements';
+export default class Fsdet extends Component {
+  static get defaultProps() {
     return {
-      title: 'Home'
+      title: 'Events'
     };
   }
-    onBackPress(){
+  onBackPress(){
     this.props.navigator.pop();
     return true; 
 }
@@ -259,53 +16,47 @@ export default class Try extends Component {
   goBack = () => {
     this.props.navigator.pop();
   };
+
   render() {
     return (
-    <BackgroundImage>
+<View style={styles.container}><Text style={styles.welcome}>Rules</Text>
+<Text style={styles.points}>Each team must have a theme.</Text>
+<Text style={styles.points}>A team must consist of minimum 10 members and a maximum of 14 members inclusive of one for music and another for lighting. </Text>
+<Text style={styles.points}>Only one team can participate from a college.</Text>
+<Text style={styles.points}>Any form of obscenity will lead to disqualification of the team</Text>
+<Text style={styles.points}>Time allotted: 7+1 minutes</Text>
+<Text style={styles.points}>Registration fee: Rs.2000.</Text>
+<Text style={styles.points}>Winners: Rs.35000.</Text>
+<Text style={styles.points}>Runners up: Rs.20000.</Text>
 
-  <Backgroundhome1 />
-     </BackgroundImage>
-    );
+
+          </View>
+    )
   }
-   componentDidMount() {
+  componentDidMount() {
     BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
 }
 }
 
+
 const styles = StyleSheet.create({
-  container: {
+   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0)',
+    backgroundColor: '#100F20',
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 30,
     textAlign: 'center',
     margin: 10,
+    color: 'white',
   },
-  instructions: {
+    points: {
+    fontSize: 15,
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    margin: 10,
+    color: 'white',
   },
-   backgroundImage: {
-        flex: 1,
-        width: null,
-        height: null,
 
-        resizeMode: 'cover'
-    },
-      backgroundImagex: {
-        flex: 5,
-        width: null,
-        height: null,
-
-        resizeMode: 'cover'
-    },
-    backgroundImage2: {
-        flex: 20,
-              position: 'relative',
-        backgroundColor:'rgba(0,0,0,0)'
-    },
 });

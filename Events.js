@@ -264,9 +264,7 @@ export default class Events extends Component {
      <View style={{ flex: 1 }} onLayout={this._onLayoutDidChange}>
          
         <Carousel
-          delay={3000}
           style={this.state.size}
-          autoplay
           bullets
           currentpage
           onAnimateNextPage={(p) => console.log(p)}

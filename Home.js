@@ -27,270 +27,20 @@ class BackgroundImage extends Component {
     }
 }
 
-class Backgroundhome1 extends Component {
-     _handlePressh = () => {
-     this.props.navigator.push({name: 'Abt',});
-    };
-     _handlePresssp = () => {
-     this.props.navigator.push({name: 'Sponsor',});
-    };
-     _handlePressl = () => {
-     this.props.navigator.push({name: 'Loc',});
-    };
-     _handlePresssc = () => {
-     this.props.navigator.push({name: 'Schedule',});
-    };
-     _handlePresse = () => {
-     this.props.navigator.push({name: 'Events',});
-    };
-     _handlePressc = () => {
-     this.props.navigator.push({name: 'Contact',});
-    };
-  
-   constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-           <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/home1.png')}>
-                    {this.props.children}
-                    <TouchableWithoutFeedback>
-                             <View style={styles.container1}>
-          <Icon 
-                name='home'  reverse color='#517fa4' backgroundColor= 'rgba(0,0,0,0)'
-                  onPress={this._handlePressh}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button 
-                 title='Sponsors' backgroundColor='rgba(1,1,1,0.5)' onPress={this._handlePresssp}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Location' onPress={this._handlePressl}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Schedule' onPress={this._handlePresssc}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                  <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Events' onPress={this._handlePresse}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-                 <TouchableWithoutFeedback>
-                             <View style={styles.container}>
-          <Button  backgroundColor= 'rgba(1,1,1,0.5)'
-                 title='Contact Us' onPress={this._handlePressc}/>
-                 </View>
-                 </TouchableWithoutFeedback>
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-            delay: 700,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome2 extends Component {
-  
-    constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-            <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/home2.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-            delay: 600,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome3 extends Component {
-  
-   constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-            <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/home3.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-            delay: 500,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome4 extends Component {
-    constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-            <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/home4.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    }
-    componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-      delay: 500,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
-class Backgroundhome5 extends Component {
-    constructor () {
-  super()
-  this.animatedValue = new Animated.Value(0)
-    }
-  
-    render() {
-        const marginLeft = this.animatedValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [400, 0]
-  })
-        return (
-           <Animated.Image
-        style={{
-            marginLeft,
-          flex: 1,
-          width: null,
-          height: null,
-          resizeMode: 'cover'
-           }}
-          source={require('./images/home5.png')}>
-                    {this.props.children}
-          </Animated.Image>
-        );
-    } componentDidMount () {
-  this.animate()
-}
-animate () {
-  this.animatedValue.setValue(0)
-  Animated.timing(
-    this.animatedValue,
-    {
-      toValue: 1,
-      duration: 500,
-      easing: Easing.linear
-    }
-  ).start()
-}
-}
+
 
 export default class Home extends Component {
-     _handlePress = () => {
+
+  _handlePressa = () => {
+     this.props.navigator.push({name: 'Events',});
+    };
+    _handlePressb = () => {
+     this.props.navigator.push({name: 'Schedule',});
+    };
+    _handlePressc = () => {
+     this.props.navigator.push({name: 'Loc',});
+    };
+     _handlePressd = () => {
      this.props.navigator.push({name: 'Contact',});
     };
      static get defaultProps() {
@@ -308,14 +58,57 @@ export default class Home extends Component {
   };
   render() {
     return (
+
+    
+<View style={styles.container}>
     <BackgroundImage>
-    <Backgroundhome5>
-<Backgroundhome4>
-<Backgroundhome3><Backgroundhome2><Backgroundhome1 navigator={this.props.navigator}>
-</Backgroundhome1  ></Backgroundhome2></Backgroundhome3>
-</Backgroundhome4>
-    </Backgroundhome5 >
-     </BackgroundImage>
+     <View style={styles.matchline}>
+
+</View>
+<View style={styles.matchline}>
+       
+</View>
+<View style={styles.matchline}>
+       <Icon
+  reverse
+  name='stars'
+  color='#1a8fc0'
+  onPress={this._handlePressa}
+
+/>
+
+</View>
+<View style={styles.matchline}>
+       <Icon
+  reverse
+  name='schedule'
+  color='#e9cd1e'
+    onPress={this._handlePressb}
+/>
+</View>
+<View style={styles.matchline}>
+       <Icon
+  reverse
+  name='location-on'
+  color='#bf4027'
+    onPress={this._handlePressc}
+/>
+</View>
+<View style={styles.matchline}>
+      <Icon
+  reverse
+  name='contact-mail'
+  color='#0f8f46'
+    onPress={this._handlePressd}
+/> 
+</View>
+          </BackgroundImage>
+         
+        
+          </View>
+ 
+
+ 
     );
   }
    componentDidMount() {
@@ -333,10 +126,12 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 4,
-    marginLeft : 10,
-    justifyContent: 'center',
-    alignItems: 'flex-start',
-    backgroundColor: 'rgba(0,0,0,0)',
+    backgroundColor: '#353a47',
+  },
+  matchline: {
+    flex : 1,
+    margin : 10,
+    backgroundColor: 'rgba(0,0,0,0)'
   },
   welcome: {
     fontSize: 20,

@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { View, StyleSheet,Navigator, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
-
 import {Text, Button, SocialIcon} from 'react-native-elements';
 export default class Contactus extends Component {
   static get defaultProps() {
@@ -21,8 +20,16 @@ export default class Contactus extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <Text> Contact Us
+      <Text style={styles.welcome}> Contact Us
         </Text>
+        <View style={styles.dev}>
+          <Text style={styles.info}>Developers
+            </Text>
+            <Text>Krishnatheja Vanka</Text>
+            <Text>+91-9916596675</Text>
+
+          </View>
+
          <View style={{flex: 1, flexDirection: 'row'}}>
         <SocialIcon
     type='facebook'
@@ -45,12 +52,21 @@ export default class Contactus extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(1,1,1,0.6)',
+    backgroundColor: 'black',
+  },
+  dev: {
+    flex: 1,
+    margin: 20,
+    backgroundColor: 'rgba(255,255,255,0.5)',
   },
   welcome: {
-    fontSize: 30,
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+    color: 'white',
+  },
+   info: {
+    fontSize: 25,
     textAlign: 'center',
     margin: 10,
     color: 'white',
