@@ -266,6 +266,7 @@ export default class Events extends Component {
         <Carousel
           style={this.state.size}
           bullets
+          autoplay = {false}
           currentpage
           onAnimateNextPage={(p) => console.log(p)}
         >

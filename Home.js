@@ -27,22 +27,93 @@ class BackgroundImage extends Component {
     }
 }
 
+class BackgroundEvents extends Component {
+   _handlePressa = () => {
+     this.props.navigator.push({name: 'Events',});
+    };
+    render() {
+        return (
+           <View style={styles.matchline}>
+       <Icon
+  reverse
+  name='stars'
+  color='#1a8fc0'
+  onPress={this._handlePressa}
+
+/>
+<Text style={styles.catego}>Events</Text>
+
+</View>
+        );
+    }
+}
+
+class BackgroundSchedule extends Component {
+ _handlePressb = () => {
+     this.props.navigator.push({name: 'Schedule',});
+    };
+    render() {
+        return (
+      <View style={styles.matchline}>
+       <Icon
+  reverse
+  name='schedule'
+  color='#e9cd1e'
+    onPress={this._handlePressb}
+/>
+<Text style={styles.catego}>Schedule</Text>
+</View>
+        );
+    }
+}
+class BackgroundLoc extends Component {
+ _handlePressc = () => {
+     this.props.navigator.push({name: 'Loc',});
+    };
+    render() {
+        return (
+     <View style={styles.matchline}>
+       <Icon
+  reverse
+  name='location-on'
+  color='#bf4027'
+    onPress={this._handlePressc}
+/>
+<Text style={styles.catego}>Location</Text>
+</View>
+        );
+    }
+}
+
+class BackgroundCon extends Component {
+     _handlePressd = () => {
+     this.props.navigator.push({name: 'Contact',});
+    };
+    render() {
+        return (
+     <View style={styles.matchline}>
+      <Icon
+  reverse
+  name='contact-mail'
+  color='#0f8f46'
+    onPress={this._handlePressd}
+/> 
+<Text style={styles.catego}>Contact Us</Text>
+</View>
+        
+        );
+    }
+}
+
+
 
 
 export default class Home extends Component {
 
-  _handlePressa = () => {
-     this.props.navigator.push({name: 'Events',});
-    };
-    _handlePressb = () => {
-     this.props.navigator.push({name: 'Schedule',});
-    };
-    _handlePressc = () => {
-     this.props.navigator.push({name: 'Loc',});
-    };
-     _handlePressd = () => {
-     this.props.navigator.push({name: 'Contact',});
-    };
+  
+   
+   
+
      static get defaultProps() {
     return {
       title: 'Home'
@@ -63,50 +134,19 @@ export default class Home extends Component {
 <View style={styles.container}>
     <BackgroundImage>
      <View style={styles.matchline}>
-
 </View>
 <View style={styles.matchline}>
        
 </View>
-<View style={styles.matchline}>
-       <Icon
-  reverse
-  name='stars'
-  color='#1a8fc0'
-  onPress={this._handlePressa}
 
-/>
-<Text style={styles.catego}>Events</Text>
+<BackgroundEvents  navigator={this.props.navigator}/>
 
-</View>
-<View style={styles.matchline}>
-       <Icon
-  reverse
-  name='schedule'
-  color='#e9cd1e'
-    onPress={this._handlePressb}
-/>
-<Text style={styles.catego}>Schedule</Text>
-</View>
-<View style={styles.matchline}>
-       <Icon
-  reverse
-  name='location-on'
-  color='#bf4027'
-    onPress={this._handlePressc}
-/>
-<Text style={styles.catego}>Location</Text>
-</View>
-<View style={styles.matchline}>
-      <Icon
-  reverse
-  name='contact-mail'
-  color='#0f8f46'
-    onPress={this._handlePressd}
-/> 
-<Text style={styles.catego}>Contact Us</Text>
-</View>
-          </BackgroundImage>
+<BackgroundSchedule navigator={this.props.navigator} />
+
+<BackgroundLoc navigator={this.props.navigator}/>
+<BackgroundCon navigator={this.props.navigator}/>
+
+  </BackgroundImage>
          
         
           </View>
@@ -141,6 +181,11 @@ const styles = StyleSheet.create({
     flex : 1,
     flexDirection: 'row',
     alignItems:'center',
+    margin : 10,
+    backgroundColor: 'rgba(0,0,0,0)'
+  },
+    matchline1: {
+    flex : 1,
     margin : 10,
     backgroundColor: 'rgba(0,0,0,0)'
   },

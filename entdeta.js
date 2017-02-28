@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Navigator,ScrollView, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, Navigator,StatusBar, ScrollView, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import {Text, Card, Button} from 'react-native-elements';
 export default class Entdeta extends Component {
@@ -21,6 +21,7 @@ export default class Entdeta extends Component {
 
   render() {
     return (
+      
       <ScrollView>
 
 <Card
