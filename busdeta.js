@@ -52,7 +52,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Business Quiz'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -65,7 +65,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Case Analysis'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -78,7 +78,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Product Launch'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>

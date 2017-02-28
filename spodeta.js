@@ -52,7 +52,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Gully Cricket'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -65,7 +65,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Slow Drag Race'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -78,7 +78,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Treasure Hunt'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -91,7 +91,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Tug of War'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>

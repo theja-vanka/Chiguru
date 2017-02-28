@@ -52,7 +52,7 @@ export default class Dandeta extends Component {
 </Card>
 <Card
   title='Indian Folk Dance'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -65,7 +65,7 @@ export default class Dandeta extends Component {
 </Card>
 <Card
   title='Solo'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>

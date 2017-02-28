@@ -54,7 +54,7 @@ export default class Musdeta extends Component {
 </Card>
 <Card
   title='Single Singing'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>

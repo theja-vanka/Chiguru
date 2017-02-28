@@ -27,7 +27,6 @@ import Events from './Events';
 
 import Contactus from './Contactus';
 
-import Cit from './Cit';
 
 import Try from './try';
 

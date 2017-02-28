@@ -53,7 +53,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Man VS Food'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -66,7 +66,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Mock Rock'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -79,7 +79,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Minute-2-Win It'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -92,7 +92,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Movie Spoof'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -105,7 +105,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Short Films'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -118,7 +118,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Short Stories'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>

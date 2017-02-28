@@ -52,7 +52,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='Mini Militia'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -65,7 +65,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='NFS'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -78,7 +78,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='Pokemon Go'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -91,7 +91,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='UNO'
-  image={require('./images/home1.png')}>
+  image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
