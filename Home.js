@@ -28,12 +28,16 @@ class BackgroundImage extends Component {
 }
 
 class BackgroundEvents extends Component {
+   constructor () {
+  super()
+  this.springValue = new Animated.Value(0.3)
+}
    _handlePressa = () => {
      this.props.navigator.push({name: 'Events',});
     };
     render() {
         return (
-           <View style={styles.matchline}>
+           <Animated.View style={[styles.matchline,{ transform: [{scale: this.springValue}] }]}  >
        <Icon
   reverse
   name='stars'
@@ -43,18 +47,35 @@ class BackgroundEvents extends Component {
 />
 <Text style={styles.catego}>Events</Text>
 
-</View>
+</Animated.View>
         );
     }
+        componentDidMount () {
+  this.spring()
+}
+   spring () {
+  this.springValue.setValue(0.3)
+  Animated.spring(
+    this.springValue,
+    {
+      toValue: 1,
+      friction: 1,
+    }
+  ).start()
+}
 }
 
 class BackgroundSchedule extends Component {
+   constructor () {
+  super()
+  this.springValue = new Animated.Value(0.3)
+}
  _handlePressb = () => {
      this.props.navigator.push({name: 'Schedule',});
     };
     render() {
         return (
-      <View style={styles.matchline}>
+      <Animated.View style={[styles.matchline,{ transform: [{scale: this.springValue}] }]}  >
        <Icon
   reverse
   name='schedule'
@@ -62,17 +83,34 @@ class BackgroundSchedule extends Component {
     onPress={this._handlePressb}
 />
 <Text style={styles.catego}>Schedule</Text>
-</View>
+</Animated.View>
         );
     }
+        componentDidMount () {
+  this.spring()
+}
+   spring () {
+  this.springValue.setValue(0.3)
+  Animated.spring(
+    this.springValue,
+    {
+      toValue: 1,
+      friction: 1,
+    }
+  ).start()
+}
 }
 class BackgroundLoc extends Component {
+   constructor () {
+  super()
+  this.springValue = new Animated.Value(0.3)
+}
  _handlePressc = () => {
      this.props.navigator.push({name: 'Loc',});
     };
     render() {
         return (
-     <View style={styles.matchline}>
+     <Animated.View style={[styles.matchline,{ transform: [{scale: this.springValue}] }]}  >
        <Icon
   reverse
   name='location-on'
@@ -80,18 +118,36 @@ class BackgroundLoc extends Component {
     onPress={this._handlePressc}
 />
 <Text style={styles.catego}>Location</Text>
-</View>
+</Animated.View>
         );
     }
+        componentDidMount () {
+  this.spring()
+}
+   spring () {
+  this.springValue.setValue(0.3)
+  Animated.spring(
+    this.springValue,
+    {
+      toValue: 1,
+      friction: 1,
+    }
+  ).start()
+}
 }
 
 class BackgroundCon extends Component {
+  constructor () {
+  super()
+  this.springValue = new Animated.Value(0.3)
+}
      _handlePressd = () => {
      this.props.navigator.push({name: 'Contact',});
     };
     render() {
         return (
-     <View style={styles.matchline}>
+
+     <Animated.View style={[styles.matchline,{ transform: [{scale: this.springValue}] }]}  >
       <Icon
   reverse
   name='contact-mail'
@@ -99,10 +155,23 @@ class BackgroundCon extends Component {
     onPress={this._handlePressd}
 /> 
 <Text style={styles.catego}>Contact Us</Text>
-</View>
+</Animated.View>
         
         );
     }
+    componentDidMount () {
+  this.spring()
+}
+   spring () {
+  this.springValue.setValue(0.3)
+  Animated.spring(
+    this.springValue,
+    {
+      toValue: 1,
+      friction: 1
+    }
+  ).start()
+}
 }
 
 
