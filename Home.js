@@ -9,7 +9,7 @@ import {
   BackAndroid,
   Animated,
   Easing,
-  TouchableWithoutFeedback
+  TouchableOpacity
 } from 'react-native';
 
 import {Button, Icon} from 'react-native-elements';
@@ -179,11 +179,11 @@ class BackgroundCon extends Component {
 
 export default class Home extends Component {
 
-  
+  _handlePress = () => {
+     this.props.navigator.push({name: 'Abt',});
+    };
    
-   
-
-     static get defaultProps() {
+        static get defaultProps() {
     return {
       title: 'Home'
     };
@@ -202,9 +202,15 @@ export default class Home extends Component {
     
 <View style={styles.container}>
     <BackgroundImage>
-     <View style={styles.matchline}>
-</View>
-<View style={styles.matchline}>
+
+<View style={styles.matchline1}>
+<TouchableOpacity>
+  <Button  backgroundColor='rgba(0,0,0,0)' title= 'chiguru don don' color='rgba(0,0,0,0)' onPress={this._handlePress}/>
+  <Button backgroundColor='rgba(0,0,0,0)' title= 'chiguru don don' color='rgba(0,0,0,0)' onPress={this._handlePress}/>
+  <Button backgroundColor='rgba(0,0,0,0)' title= 'chiguru don don' color='rgba(0,0,0,0)' onPress={this._handlePress} />
+  <Button backgroundColor='rgba(0,0,0,0)' title= 'chiguru don don' color='rgba(0,0,0,0)' onPress={this._handlePress}/>
+  <Button backgroundColor='rgba(0,0,0,0)' title= 'chiguru don don' color='rgba(0,0,0,0)' onPress={this._handlePress}/>
+  </TouchableOpacity>
        
 </View>
 
@@ -254,14 +260,19 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0)'
   },
     matchline1: {
-    flex : 1,
+    flex : 2,
     margin : 10,
+    alignItems: 'flex-end',
+    justifyContent: 'center',
     backgroundColor: 'rgba(0,0,0,0)'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+  },
+  check:{
+backgroundColor:'rgba(0,0,0,0)'
   },
   instructions: {
     textAlign: 'center',
@@ -274,10 +285,5 @@ const styles = StyleSheet.create({
         height: null,
 
         resizeMode: 'cover'
-    },
-    backgroundImage2: {
-        flex: 20,
-              position: 'relative',
-        backgroundColor:'rgba(0,0,0,0)'
     },
 });
