@@ -1,7 +1,23 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Navigator, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, Navigator, Image, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import {Text} from 'react-native-elements';
+
+
+
+class BackgroundImage extends Component {
+   
+    render() {
+        return (
+            <Image source={require('./images/fash.png')}
+                  style={styles.backgroundImage}>
+
+          {this.props.children}
+            </Image>
+        );
+    }
+}
+
 export default class Fsdet extends Component {
   static get defaultProps() {
     return {
@@ -19,14 +35,14 @@ export default class Fsdet extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-<View style={styles.containerup}>
 
-          </View>
+      <View style={styles.container}>
+          <BackgroundImage />
           <View style={styles.containerdown}>
 
           </View>
           </View>
+ 
           
     )
   }
@@ -62,6 +78,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
     color: 'white',
-  },
+  }, backgroundImage: {
+        flex: 1,
+        width: null,
+        height: null,
+    backgroundColor: '#100F20',
+        resizeMode: 'cover'
+    },
+  
 
 });
