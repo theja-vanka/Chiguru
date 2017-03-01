@@ -28,7 +28,7 @@ export default class Busdeta extends Component {
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
-    Prove youself worthy to survive.
+    "My success comes from my team."
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -41,7 +41,7 @@ export default class Busdeta extends Component {
   title='Business Plan'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    Actions. Are you up for challenege ??
+   "My vision is..."
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -67,7 +67,7 @@ export default class Busdeta extends Component {
   title='Case Analysis'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Sherlock, Watson or Anderson !
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -80,8 +80,7 @@ export default class Busdeta extends Component {
   title='Product Launch'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
+Innovation meets creation.  </Text>
   <Button
     icon={{name: 'code'}}
     backgroundColor='#03A9F4'

@@ -30,8 +30,7 @@ export default class Musdeta extends Component {
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
-    Prove youself worthy to survive.
-  </Text>
+  pv zk bschk pv zk pv bschk zk pv zk bschk pv zk pv. D cent out ! *Mic Drop*  </Text>
   <Button
     icon={{name: 'code'}}
     backgroundColor='#03A9F4'
@@ -43,7 +42,7 @@ export default class Musdeta extends Component {
   title='Group Singing'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    Actions. Are you up for challenege ??
+    Harmony at its best.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -53,10 +52,10 @@ export default class Musdeta extends Component {
     title='Details' />
 </Card>
 <Card
-  title='Single Singing'
+  title='Solo Singing'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Is your pitch perfect.
   </Text>
   <Button
     icon={{name: 'code'}}

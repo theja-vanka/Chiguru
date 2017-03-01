@@ -28,7 +28,7 @@ export default class Artdeta extends Component {
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
-    Prove youself worthy to survive.
+   Put it together.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -41,7 +41,7 @@ export default class Artdeta extends Component {
   title='Doodles'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    Actions. Are you up for challenege ??
+    Draw your life.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -54,8 +54,7 @@ export default class Artdeta extends Component {
   title='Face Painting'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
+Photoshop on your face.  </Text>
   <Button
     icon={{name: 'code'}}
     backgroundColor='#03A9F4'
@@ -67,7 +66,7 @@ export default class Artdeta extends Component {
   title='Nail Art'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Where Nails Meet Art.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -80,7 +79,7 @@ export default class Artdeta extends Component {
   title='Photography'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+  Shoot em and frame them.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -93,7 +92,7 @@ export default class Artdeta extends Component {
   title='Sketching'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Can you pull off a Neil Caffery
   </Text>
   <Button
     icon={{name: 'code'}}

@@ -20,7 +20,7 @@ export default class Schedule extends Component {
     return (
       <TouchableWithoutFeedback>
         <View>
-          <Text onPress={this.goBack}>Schedule</Text>
+          <Text onPress={this.goBack}> Under Construction</Text>
         </View>
       </TouchableWithoutFeedback>
     )

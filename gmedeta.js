@@ -28,8 +28,7 @@ export default class Gmedeta extends Component {
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
-    Prove youself worthy to survive.
-  </Text>
+  Are you geek enough ?  </Text>
   <Button
     icon={{name: 'code'}}
     backgroundColor='#03A9F4'
@@ -41,7 +40,7 @@ export default class Gmedeta extends Component {
   title='FIFA'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    Actions. Are you up for challenege ??
+   Its not just a game. Its a religion.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -54,8 +53,7 @@ export default class Gmedeta extends Component {
   title='Mini Militia'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
+   No lag please. </Text>
   <Button
     icon={{name: 'code'}}
     backgroundColor='#03A9F4'
@@ -67,7 +65,7 @@ export default class Gmedeta extends Component {
   title='NFS'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Are you fast enough !
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -80,7 +78,8 @@ export default class Gmedeta extends Component {
   title='Pokemon Go'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    
+    Gotta Catch'em All.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -93,7 +92,7 @@ export default class Gmedeta extends Component {
   title='UNO'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Give your friend a draw 4.
   </Text>
   <Button
     icon={{name: 'code'}}

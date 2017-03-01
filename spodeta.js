@@ -28,7 +28,7 @@ export default class Spodeta extends Component {
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
-    Prove youself worthy to survive.
+    Dunk it.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -41,7 +41,7 @@ export default class Spodeta extends Component {
   title='Football'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    Actions. Are you up for challenege ??
+   Score it to win it.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -54,7 +54,7 @@ export default class Spodeta extends Component {
   title='Gully Cricket'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+   Smash that window.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -67,7 +67,7 @@ export default class Spodeta extends Component {
   title='Slow Drag Race'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    No trainer wheels.
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -80,7 +80,7 @@ export default class Spodeta extends Component {
   title='Treasure Hunt'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Decrypt this. 'UPHWXOYW'
   </Text>
   <Button
     icon={{name: 'code'}}
@@ -93,7 +93,7 @@ export default class Spodeta extends Component {
   title='Tug of War'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
+    Yank it !
   </Text>
   <Button
     icon={{name: 'code'}}

@@ -275,7 +275,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/f_sho.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_fs.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text>
          <FsDeta navigator={this.props.navigator}/>
           </View></Image></View>
 
@@ -302,7 +302,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Musical </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_mus.png')}><View style={styles.container}><Text style={styles.welcome}>Musical </Text>
           <Musdeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
@@ -311,7 +311,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_ent.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
           <EntDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
@@ -338,7 +338,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/game.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_gme.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
           <GmeDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 

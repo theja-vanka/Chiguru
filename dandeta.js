@@ -8,7 +8,9 @@ export default class Dandeta extends Component {
       title: 'Events'
     };
   }
-
+ _handlePressfd = () => {
+     this.props.navigator.push({name: 'airdetails',});
+    };
   
   onBackPress(){
     this.props.navigator.pop();
@@ -28,12 +30,12 @@ export default class Dandeta extends Component {
   image={require('./images/aircrash.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
-    Prove youself worthy to survive.
-  </Text>
+    Live. Love. Dance.
+    </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+icon={{name:'toc'}}
+    backgroundColor='#353a47'
+      onPress={this._handlePressfd}
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -41,12 +43,11 @@ export default class Dandeta extends Component {
   title='Indian Filmy'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    Actions. Are you up for challenege ??
-  </Text>
+  Are you bollywood enough ?  </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+icon={{name:'toc'}}
+    backgroundColor='#353a47'
+     
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -54,12 +55,12 @@ export default class Dandeta extends Component {
   title='Indian Folk Dance'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
+    Back to the roots !
+    </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+icon={{name:'toc'}}
+    backgroundColor='#353a47'
+     
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
@@ -67,12 +68,12 @@ export default class Dandeta extends Component {
   title='Solo'
   image={require('./images/mime.png')}>
   <Text style={{marginBottom: 10}}>
-    The idea with React Native Elements is more about component structure than actual design.
-  </Text>
+    Break a leg !!
+    </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+icon={{name:'toc'}}
+    backgroundColor='#353a47'
+     
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>

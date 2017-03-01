@@ -58,6 +58,8 @@ import Dandeta from './dandeta';
 
 import Musdeta from './musdeta';
 
+import Airdet from './Aircrash';
+
 class BackgroundImage extends Component {
   
     render() {
@@ -295,6 +297,10 @@ export default class Chiguru extends Component {
       return <Musdeta navigator={navigator}/>
       
     }
+     else if (route.name === 'airdetails'){
+      return <Airdet navigator={navigator}/>
+      
+    }
   }
   render() {
   
@@ -314,6 +320,9 @@ export default class Chiguru extends Component {
     }else if (route.name === 'Sponsor'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }else if (route.name === 'Abt'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'airdetails'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
     else if (route.name === 'fsdetails'){
