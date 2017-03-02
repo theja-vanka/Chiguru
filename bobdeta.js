@@ -39,7 +39,12 @@ export default class Bobdet extends Component {
       <View style={styles.container}>
           <BackgroundImage />
           <View style={styles.containerdown}>
-
+            <Text style={styles.welcome}>Rules</Text>
+<Text style={styles.points}>Time limit: 3+1 minutes</Text>
+<Text style={styles.points}>Registration fee: Rs.200 </Text>
+<Text style={styles.points}>Prize money:- Winner: Rs.2000 
+Runner: 1000
+</Text>
           </View>
           </View>
  
@@ -67,8 +72,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#394359',
   },
-  welcome: {
+   welcome: {
     fontSize: 30,
+    textAlign: 'center',
+    margin: 10,
+    color: 'white',
+  },
+    points: {
+    fontSize: 15,
     textAlign: 'center',
     margin: 10,
     color: 'white',

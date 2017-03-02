@@ -9,7 +9,7 @@ export default class Dandeta extends Component {
     };
   }
  _handlePressfd = () => {
-     this.props.navigator.push({name: 'airdetails',});
+     this.props.navigator.push({name: 'card1',});
     };
   
   onBackPress(){

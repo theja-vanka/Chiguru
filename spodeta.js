@@ -9,7 +9,24 @@ export default class Spodeta extends Component {
     };
   }
 
-  
+   _handlePressfd1 = () => {
+     this.props.navigator.push({name: 'card601',});
+    };
+  _handlePressfd2 = () => {
+     this.props.navigator.push({name: 'card602',});
+    };
+  _handlePressfd3 = () => {
+     this.props.navigator.push({name: 'card603',});
+    };
+  _handlePressfd4 = () => {
+     this.props.navigator.push({name: 'card604',});
+    };
+   _handlePressfd5 = () => {
+     this.props.navigator.push({name: 'card605',});
+    };
+      _handlePressfd6 = () => {
+     this.props.navigator.push({name: 'card606',});
+    };
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -33,7 +50,8 @@ export default class Spodeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+  onPress={this._handlePressfd1}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -46,7 +64,8 @@ export default class Spodeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+  onPress={this._handlePressfd2}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -59,7 +78,8 @@ export default class Spodeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+  onPress={this._handlePressfd3}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -72,7 +92,8 @@ export default class Spodeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+  onPress={this._handlePressfd4}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -85,7 +106,8 @@ export default class Spodeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+  onPress={this._handlePressfd5}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -98,7 +120,8 @@ export default class Spodeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+  onPress={this._handlePressfd6}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>

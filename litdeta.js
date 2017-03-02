@@ -8,6 +8,18 @@ export default class Litdeta extends Component {
       title: 'Events'
     };
   }
+  _handlePressfd = () => {
+     this.props.navigator.push({name: 'card101',});
+    };
+  _handlePressfd = () => {
+     this.props.navigator.push({name: 'card102',});
+    };
+  _handlePressfd = () => {
+     this.props.navigator.push({name: 'card103',});
+    };
+  _handlePressfd = () => {
+     this.props.navigator.push({name: 'card104',});
+    };
 
   
   onBackPress(){
@@ -33,7 +45,8 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+      onPress={this._handlePressfd}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -45,6 +58,7 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
+      onPress={this._handlePressfd}
  
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
@@ -58,6 +72,7 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
+      onPress={this._handlePressfd}
  
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title= 'Details' />
@@ -71,6 +86,7 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
+      onPress={this._handlePressfd}
  
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title= 'Details' />

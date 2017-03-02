@@ -30,6 +30,54 @@ import Contactus from './Contactus';
 
 import Try from './try';
 
+import Dance1 from './eve_fudan';
+
+import Business1 from './eve_bstmanag';
+
+import Business2 from './eve_busplan';
+
+import Business3 from './eve_busquiz';
+
+import Business4 from './eve_caseana';
+
+import Business5 from './eve_prolnch';
+
+import Game1 from './eve_csgo';
+
+import Game2 from './eve_fifa';
+import Game3 from './eve_minmilt';
+import Game4 from './eve_pokmn';
+import Game5 from './eve_uno';
+
+import Art1 from './eve_coll';
+import Art2 from './eve_fcepnt';
+import Art3 from './eve_nlart';
+import Art4 from './eve_photo';
+import Art5 from './eve_sktch';
+
+import Sport1 from './eve_basktbl';
+import Sport2 from './eve_footbl';
+import Sport3 from './eve_gulcrkt';
+import Sport4 from './eve_slwdrgrc';
+import Sport5 from './eve_trshnt';
+import Sport6 from './eve_tow';
+
+import Ent1 from './eve_aircrash';
+import Ent2 from './eve_mime';
+import Ent3 from './eve_manvfood';
+import Ent4 from './eve_mkrk';
+import Ent5 from './eve_m2win';
+import Ent6 from './eve_shrtfilms';
+
+import Mus1 from './eve_bbox';
+import Mus2 from './eve_grpsin';
+import Mus3 from './eve_solsin';
+
+import Literacy1 from './eve_101';
+import Literacy2 from './eve_102';
+import Literacy3 from './eve_103';
+import Literacy4 from './eve_104';
+
 import Aboutus from './Aboutus';
 
 import Schedule from './Schedule';
@@ -297,10 +345,146 @@ export default class Chiguru extends Component {
       return <Musdeta navigator={navigator}/>
       
     }
-     else if (route.name === 'airdetails'){
-      return <Airdet navigator={navigator}/>
+     else if (route.name === 'card1'){
+      return <Dance1 navigator={navigator}/>
       
     }
+    else if (route.name === 'card101'){
+      return <Literacy1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card102'){
+      return <Literacy2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card103'){
+      return <Literacy3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card104'){
+      return <Literacy4 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card905'){
+      return <Business5 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card901'){
+      return <Business1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card902'){
+      return <Business2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card903'){
+      return <Business3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card904'){
+      return <Business4 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card801'){
+      return <Game1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card802'){
+      return <Game2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card803'){
+      return <Game3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card804'){
+      return <Game4 navigator={navigator}/>
+      
+    }else if (route.name === 'card805'){
+      return <Game5 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card701'){
+      return <Art1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card702'){
+      return <Art2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card703'){
+      return <Art3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card704'){
+      return <Art4 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card705'){
+      return <Art5 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card601'){
+      return <Sport1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card602'){
+      return <Sport2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card603'){
+      return <Sport3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card604'){
+      return <Sport4 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card605'){
+      return <Sport5 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card606'){
+      return <Sport6 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card501'){
+      return <Ent1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card502'){
+      return <Ent2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card503'){
+      return <Ent3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card504'){
+      return <Ent4 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card505'){
+      return <Ent5 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card506'){
+      return <Ent6 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card401'){
+      return <Mus1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card402'){
+      return <Mus2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card403'){
+      return <Mus3 navigator={navigator}/>
+      
+    }
+
   }
   render() {
   
@@ -352,8 +536,110 @@ export default class Chiguru extends Component {
     else if (route.name === 'dandetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }
-     else if (route.name === 'musdetails'){
+    else if (route.name === 'musdetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+     else if (route.name === 'card1'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card101'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card102'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card103'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card104'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card901'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card902'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card903'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card904'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card905'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card801'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card802'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card803'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card804'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card805'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card701'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card702'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }else if (route.name === 'card703'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }else if (route.name === 'card704'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }else if (route.name === 'card705'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card601'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card602'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card603'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card604'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card605'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card606'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card501'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card502'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card503'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card504'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card505'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card506'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card401'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card402'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+     else if (route.name === 'card403'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
   }}
         initialRoute={{name: 'Main', }}

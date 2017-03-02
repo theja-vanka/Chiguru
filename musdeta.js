@@ -11,7 +11,15 @@ export default class Musdeta extends Component {
     };
   }
 
-  
+  _handlePressfd1 = () => {
+     this.props.navigator.push({name: 'card401',});
+    };
+  _handlePressfd2 = () => {
+     this.props.navigator.push({name: 'card402',});
+    };
+  _handlePressfd3 = () => {
+     this.props.navigator.push({name: 'card403',});
+    };
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -34,7 +42,8 @@ export default class Musdeta extends Component {
   <Button
     icon={{name:'toc'}}
      backgroundColor='#353a47'
-     
+      onPress={this._handlePressfd1}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -47,7 +56,8 @@ export default class Musdeta extends Component {
   <Button
     icon={{name:'toc'}}
      backgroundColor='#353a47'
-     
+      onPress={this._handlePressfd2}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -60,7 +70,8 @@ export default class Musdeta extends Component {
   <Button
     icon={{name:'toc'}}
      backgroundColor='#353a47'
-     
+      onPress={this._handlePressfd3}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>

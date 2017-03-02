@@ -9,7 +9,21 @@ export default class Gmedeta extends Component {
     };
   }
 
-  
+  _handlePressgd1 = () => {
+     this.props.navigator.push({name: 'card801',});
+    };
+  _handlePressgd2 = () => {
+     this.props.navigator.push({name: 'card802',});
+    };
+  _handlePressgd3 = () => {
+     this.props.navigator.push({name: 'card803',});
+    };
+  _handlePressgd4 = () => {
+     this.props.navigator.push({name: 'card804',});
+    };
+   _handlePressgd5 = () => {
+     this.props.navigator.push({name: 'card805',});
+    };
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -32,7 +46,8 @@ export default class Gmedeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+       onPress={this._handlePressgd1}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -45,7 +60,8 @@ export default class Gmedeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+       onPress={this._handlePressgd2}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -57,7 +73,8 @@ export default class Gmedeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+       onPress={this._handlePressgd3}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
@@ -84,7 +101,8 @@ export default class Gmedeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+       onPress={this._handlePressgd4}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
@@ -97,7 +115,8 @@ export default class Gmedeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+       onPress={this._handlePressgd5}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
