@@ -9,7 +9,7 @@ class BackgroundImage extends Component {
    
     render() {
         return (
-            <Image source={require('./images/fash.png')}
+            <Image source={require('./images/lobo.png')}
                   style={styles.backgroundImage}>
 
           {this.props.children}
@@ -39,11 +39,23 @@ export default class Bobdet extends Component {
       <View style={styles.container}>
           <BackgroundImage />
           <View style={styles.containerdown}>
+
             <Text style={styles.welcome}>Rules</Text>
-<Text style={styles.points}>Time limit: 3+1 minutes</Text>
-<Text style={styles.points}>Registration fee: Rs.200 </Text>
-<Text style={styles.points}>Prize money:- Winner: Rs.2000 
-Runner: 1000
+<Text style={styles.points}>Minimum of
+
+three members per band</Text>
+<Text style={styles.points}>Time allotted
+
+will be 10+5 minutes inclusive of sound check. </Text>
+<Text style={styles.points}>No props allowed
+</Text>
+<Text style={styles.points}>Registration fee: Rs.1000 
+</Text>
+<Text style={styles.points}>Winner:
+
+Rs.12000 
+</Text>
+<Text style={styles.points}>Runners up: 6000
 </Text>
           </View>
           </View>
@@ -73,13 +85,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#394359',
   },
    welcome: {
-    fontSize: 30,
+    fontSize: 23,
     textAlign: 'center',
     margin: 10,
     color: 'white',
   },
     points: {
-    fontSize: 15,
+    fontSize: 11,
     textAlign: 'center',
     margin: 10,
     color: 'white',
