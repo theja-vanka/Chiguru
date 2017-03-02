@@ -31,9 +31,9 @@ export default class Busdeta extends Component {
     "My success comes from my team."
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -44,9 +44,9 @@ export default class Busdeta extends Component {
    "My vision is..."
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -57,11 +57,11 @@ export default class Busdeta extends Component {
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title= 'Details' />
 </Card>
 <Card
   title='Case Analysis'
@@ -70,11 +70,11 @@ export default class Busdeta extends Component {
     Sherlock, Watson or Anderson !
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title= 'Details' />
 </Card>
 <Card
   title='Product Launch'
@@ -82,11 +82,11 @@ export default class Busdeta extends Component {
   <Text style={{marginBottom: 10}}>
 Innovation meets creation.  </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title= 'Details' />
 </Card>
 
 

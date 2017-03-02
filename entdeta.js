@@ -32,9 +32,9 @@ export default class Entdeta extends Component {
     Prove youself worthy to survive.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -44,9 +44,9 @@ export default class Entdeta extends Component {
   <Text style={{marginBottom: 10}}>
     Let your body speak !!</Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -58,11 +58,11 @@ export default class Entdeta extends Component {
    Spit or Swallow
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Mock Rock'
@@ -71,11 +71,11 @@ export default class Entdeta extends Component {
     Get your humor on.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Minute-2-Win It'
@@ -84,11 +84,11 @@ export default class Entdeta extends Component {
     Its all in the name.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Movie Spoof'
@@ -97,11 +97,11 @@ export default class Entdeta extends Component {
     Scary movie was just the beginning.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Short Films'
@@ -110,11 +110,11 @@ export default class Entdeta extends Component {
     Size does matter.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Short Stories'
@@ -123,11 +123,11 @@ export default class Entdeta extends Component {
     
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 
 

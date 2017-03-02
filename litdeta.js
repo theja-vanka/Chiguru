@@ -31,9 +31,9 @@ export default class Litdeta extends Component {
     Are you quick enough ?
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -43,9 +43,9 @@ export default class Litdeta extends Component {
   <Text style={{marginBottom: 10}}>
   Just Detective stuff !  </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -56,11 +56,11 @@ export default class Litdeta extends Component {
    Drop drag to fly.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title= 'Details' />
 </Card>
 <Card
   title='Aashubashane'
@@ -69,11 +69,11 @@ export default class Litdeta extends Component {
     Kannada Speech.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title= 'Details' />
 </Card>
 
 

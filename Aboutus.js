@@ -15,18 +15,6 @@ class BackgroundImage extends Component {
         );
     }
 }
-class BackgroundLogo extends Component {
-  
-    render() {
-        return (
-            <Image source={require('./images/abtcig.png')}
-                  style={styles.backgroundImage}>
-
-   {this.props.children}
-            </Image>
-        );
-    }
-}
 
 export default class Aboutus extends Component {
   static get defaultProps() {

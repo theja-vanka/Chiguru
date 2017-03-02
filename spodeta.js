@@ -31,9 +31,9 @@ export default class Spodeta extends Component {
     Dunk it.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -44,9 +44,9 @@ export default class Spodeta extends Component {
    Score it to win it.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -57,11 +57,11 @@ export default class Spodeta extends Component {
    Smash that window.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Slow Drag Race'
@@ -70,11 +70,11 @@ export default class Spodeta extends Component {
     No trainer wheels.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Treasure Hunt'
@@ -83,11 +83,11 @@ export default class Spodeta extends Component {
     Decrypt this. 'UPHWXOYW'
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Tug of War'
@@ -96,11 +96,11 @@ export default class Spodeta extends Component {
     Yank it !
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 
 

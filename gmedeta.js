@@ -30,9 +30,9 @@ export default class Gmedeta extends Component {
   <Text style={{marginBottom: 10}}>
   Are you geek enough ?  </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -43,9 +43,9 @@ export default class Gmedeta extends Component {
    Its not just a game. Its a religion.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -55,9 +55,9 @@ export default class Gmedeta extends Component {
   <Text style={{marginBottom: 10}}>
    No lag please. </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
@@ -68,9 +68,9 @@ export default class Gmedeta extends Component {
     Are you fast enough !
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
@@ -82,9 +82,9 @@ export default class Gmedeta extends Component {
     Gotta Catch'em All.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>
@@ -95,9 +95,9 @@ export default class Gmedeta extends Component {
     Give your friend a draw 4.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>

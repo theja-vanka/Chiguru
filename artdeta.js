@@ -31,9 +31,9 @@ export default class Artdeta extends Component {
    Put it together.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -44,9 +44,9 @@ export default class Artdeta extends Component {
     Draw your life.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -56,11 +56,11 @@ export default class Artdeta extends Component {
   <Text style={{marginBottom: 10}}>
 Photoshop on your face.  </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Nail Art'
@@ -69,11 +69,11 @@ Photoshop on your face.  </Text>
     Where Nails Meet Art.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Photography'
@@ -82,11 +82,11 @@ Photoshop on your face.  </Text>
   Shoot em and frame them.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Sketching'
@@ -95,11 +95,11 @@ Photoshop on your face.  </Text>
     Can you pull off a Neil Caffery
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+ 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 
 

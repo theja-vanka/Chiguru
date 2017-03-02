@@ -32,9 +32,9 @@ export default class Musdeta extends Component {
   <Text style={{marginBottom: 10}}>
   pv zk bschk pv zk pv bschk zk pv zk bschk pv zk pv. D cent out ! *Mic Drop*  </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+     
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -45,9 +45,9 @@ export default class Musdeta extends Component {
     Harmony at its best.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+     
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
@@ -58,11 +58,11 @@ export default class Musdeta extends Component {
     Is your pitch perfect.
   </Text>
   <Button
-    icon={{name: 'code'}}
-    backgroundColor='#03A9F4'
-    fontFamily='Lato'
+    icon={{name:'toc'}}
+     backgroundColor='#353a47'
+     
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 
           </ScrollView>

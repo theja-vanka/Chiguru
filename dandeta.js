@@ -27,7 +27,7 @@ export default class Dandeta extends Component {
 
 <Card
   title='Fusion Dance'
-  image={require('./images/aircrash.png')}
+  image={require('./images/fs1.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
     Live. Love. Dance.
@@ -41,7 +41,7 @@ icon={{name:'toc'}}
 </Card>
 <Card
   title='Indian Filmy'
-  image={require('./images/mime.png')}>
+  image={require('./images/indiand.png')}>
   <Text style={{marginBottom: 10}}>
   Are you bollywood enough ?  </Text>
   <Button
@@ -53,7 +53,7 @@ icon={{name:'toc'}}
 </Card>
 <Card
   title='Indian Folk Dance'
-  image={require('./images/mime.png')}>
+  image={require('./images/folkd.png')}>
   <Text style={{marginBottom: 10}}>
     Back to the roots !
     </Text>
@@ -62,11 +62,11 @@ icon={{name:'toc'}}
     backgroundColor='#353a47'
      
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 <Card
   title='Solo'
-  image={require('./images/mime.png')}>
+  image={require('./images/solod.png')}>
   <Text style={{marginBottom: 10}}>
     Break a leg !!
     </Text>
@@ -75,7 +75,7 @@ icon={{name:'toc'}}
     backgroundColor='#353a47'
      
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='VIEW NOW' />
+    title='Details' />
 </Card>
 
           </ScrollView>
