@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { View, Navigator, ScrollView, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import Communications from 'react-native-communications';
 
 import {Text, Card, Button} from 'react-native-elements';
 export default class Litdeta extends Component {

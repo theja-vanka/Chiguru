@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "15.4.2",
     "react-native": "0.41.2",
+    "react-native-communications": "^2.2.1",
     "react-native-countdown": "0.0.3",
     "react-native-elements": "^0.9.6",
     "react-native-looped-carousel": "^0.1.5",
