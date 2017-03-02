@@ -27,7 +27,7 @@ export default class Musdeta extends Component {
 
 <Card
   title='Beat Boxing'
-  image={require('./images/aircrash.png')}
+  image={require('./images/bbox.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
   pv zk bschk pv zk pv bschk zk pv zk bschk pv zk pv. D cent out ! *Mic Drop*  </Text>
@@ -40,7 +40,7 @@ export default class Musdeta extends Component {
 </Card>
 <Card
   title='Group Singing'
-  image={require('./images/mime.png')}>
+  image={require('./images/groups.png')}>
   <Text style={{marginBottom: 10}}>
     Harmony at its best.
   </Text>
@@ -53,7 +53,7 @@ export default class Musdeta extends Component {
 </Card>
 <Card
   title='Solo Singing'
-  image={require('./images/mime.png')}>
+  image={require('./images/solos.png')}>
   <Text style={{marginBottom: 10}}>
     Is your pitch perfect.
   </Text>

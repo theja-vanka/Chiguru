@@ -52,7 +52,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Man VS Food'
-  image={require('./images/mime.png')}>
+  image={require('./images/mvf.png')}>
   <Text style={{marginBottom: 10}}>
     
    Spit or Swallow
@@ -66,7 +66,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Mock Rock'
-  image={require('./images/mime.png')}>
+  image={require('./images/mockrock.png')}>
   <Text style={{marginBottom: 10}}>
     Get your humor on.
   </Text>
@@ -79,7 +79,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Minute-2-Win It'
-  image={require('./images/mime.png')}>
+  image={require('./images/m2wi.png')}>
   <Text style={{marginBottom: 10}}>
     Its all in the name.
   </Text>
@@ -92,7 +92,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Movie Spoof'
-  image={require('./images/mime.png')}>
+  image={require('./images/moviespof.png')}>
   <Text style={{marginBottom: 10}}>
     Scary movie was just the beginning.
   </Text>
@@ -105,7 +105,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Short Films'
-  image={require('./images/mime.png')}>
+  image={require('./images/shortfilm.png')}>
   <Text style={{marginBottom: 10}}>
     Size does matter.
   </Text>
@@ -118,7 +118,7 @@ export default class Entdeta extends Component {
 </Card>
 <Card
   title='Short Stories'
-  image={require('./images/mime.png')}>
+  image={require('./images/sstory.png')}>
   <Text style={{marginBottom: 10}}>
     
   </Text>

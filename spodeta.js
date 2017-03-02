@@ -25,7 +25,7 @@ export default class Spodeta extends Component {
 
 <Card
   title='Basketball'
-  image={require('./images/aircrash.png')}
+  image={require('./images/bball.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
     Dunk it.
@@ -39,7 +39,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Football'
-  image={require('./images/mime.png')}>
+  image={require('./images/foot.png')}>
   <Text style={{marginBottom: 10}}>
    Score it to win it.
   </Text>
@@ -52,7 +52,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Gully Cricket'
-  image={require('./images/mime.png')}>
+  image={require('./images/cric.png')}>
   <Text style={{marginBottom: 10}}>
    Smash that window.
   </Text>
@@ -65,7 +65,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Slow Drag Race'
-  image={require('./images/mime.png')}>
+  image={require('./images/speed.png')}>
   <Text style={{marginBottom: 10}}>
     No trainer wheels.
   </Text>
@@ -78,7 +78,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Treasure Hunt'
-  image={require('./images/mime.png')}>
+  image={require('./images/thunt.png')}>
   <Text style={{marginBottom: 10}}>
     Decrypt this. 'UPHWXOYW'
   </Text>
@@ -91,7 +91,7 @@ export default class Spodeta extends Component {
 </Card>
 <Card
   title='Tug of War'
-  image={require('./images/mime.png')}>
+  image={require('./images/tuffwar.png')}>
   <Text style={{marginBottom: 10}}>
     Yank it !
   </Text>

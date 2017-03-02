@@ -25,7 +25,7 @@ export default class Gmedeta extends Component {
 
 <Card
   title='Counter Strike'
-  image={require('./images/aircrash.png')}
+  image={require('./images/cs.png')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
   Are you geek enough ?  </Text>
@@ -38,7 +38,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='FIFA'
-  image={require('./images/mime.png')}>
+  image={require('./images/fifa.png')}>
   <Text style={{marginBottom: 10}}>
    Its not just a game. Its a religion.
   </Text>
@@ -51,7 +51,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='Mini Militia'
-  image={require('./images/mime.png')}>
+  image={require('./images/mini.png')}>
   <Text style={{marginBottom: 10}}>
    No lag please. </Text>
   <Button
@@ -63,7 +63,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='NFS'
-  image={require('./images/mime.png')}>
+  image={require('./images/nfs.png')}>
   <Text style={{marginBottom: 10}}>
     Are you fast enough !
   </Text>
@@ -76,7 +76,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='Pokemon Go'
-  image={require('./images/mime.png')}>
+  image={require('./images/pgo.png')}>
   <Text style={{marginBottom: 10}}>
     
     Gotta Catch'em All.
@@ -90,7 +90,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='UNO'
-  image={require('./images/mime.png')}>
+  image={require('./images/uno.png')}>
   <Text style={{marginBottom: 10}}>
     Give your friend a draw 4.
   </Text>
