@@ -8,10 +8,19 @@ export default class Dandeta extends Component {
       title: 'Events'
     };
   }
- _handlePressfd = () => {
-     this.props.navigator.push({name: 'card1',});
+ _handlePressfd1 = () => {
+     this.props.navigator.push({name: 'card301',});
     };
-  
+  _handlePressfd2 = () => {
+     this.props.navigator.push({name: 'card302',});
+    };
+    _handlePressfd3 = () => {
+     this.props.navigator.push({name: 'card303',});
+    };
+    _handlePressfd4 = () => {
+     this.props.navigator.push({name: 'card304',});
+    };
+   
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -35,37 +44,38 @@ export default class Dandeta extends Component {
   <Button
 icon={{name:'toc'}}
     backgroundColor='#353a47'
-      onPress={this._handlePressfd}
+      onPress={this._handlePressfd1}
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
 <Card
-  title='Indian Filmy'
-  image={require('./images/indiand.png')}>
+  title='Group Dance'
+  image={require('./images/grpdan.png')}>
   <Text style={{marginBottom: 10}}>
   Are you bollywood enough ?  </Text>
   <Button
 icon={{name:'toc'}}
     backgroundColor='#353a47'
-     
+     onPress={this._handlePressfd2}
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
 <Card
-  title='Indian Folk Dance'
-  image={require('./images/folkd.png')}>
+  title='Indian Filmy Dance'
+  image={require('./images/indiand.png')}>
   <Text style={{marginBottom: 10}}>
     Back to the roots !
     </Text>
   <Button
 icon={{name:'toc'}}
     backgroundColor='#353a47'
+    onPress={this._handlePressfd3}
      
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
 <Card
-  title='Solo'
+  title='Solo Dance'
   image={require('./images/solod.png')}>
   <Text style={{marginBottom: 10}}>
     Break a leg !!
@@ -73,6 +83,7 @@ icon={{name:'toc'}}
   <Button
 icon={{name:'toc'}}
     backgroundColor='#353a47'
+    onPress={this._handlePressfd4}
      
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />

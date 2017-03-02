@@ -20,11 +20,12 @@ export default class Art1 extends Component {
   render() {
     return (
 <View style={styles.container}><Text style={styles.welcome}>Rules</Text>
-<Text style={styles.points}>Minimum of 5 members and a maximum of 8 members per group</Text>
-<Text style={styles.points}>Time limit: 5+1 minutes </Text>
-<Text style={styles.points}>Music must be submitted to the event coordinator 30 minutes prior to the event only in pendrive (.mp3 files only)</Text>
-<Text style={styles.points}>Registration fee: Rs.600 </Text>
-<Text style={styles.points}>Prize money: Winners: Rs.6000 Runners: Rs.3000 </Text>
+<Text style={styles.points}>Theme will be announced on the spot </Text>
+<Text style={styles.points}>Maximum of 2 members can participate</Text>
+<Text style={styles.points}>Time allotted is 2 hours</Text>
+<Text style={styles.points}>Materials to be brought by the participants (including the chart paper or similar stationery)</Text>
+<Text style={styles.points}>Registration fee: Rs.100</Text>
+<Text style={styles.points}>Prize money: Winners: Rs.1000</Text>
           </View>
     )
   }

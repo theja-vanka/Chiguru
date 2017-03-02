@@ -24,6 +24,9 @@ export default class Gmedeta extends Component {
    _handlePressgd5 = () => {
      this.props.navigator.push({name: 'card805',});
     };
+       _handlePressgd6 = () => {
+     this.props.navigator.push({name: 'card806',});
+    };
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -79,15 +82,16 @@ export default class Gmedeta extends Component {
     title='VIEW NOW' />
 </Card>
 <Card
-  title='NFS'
-  image={require('./images/nfs.png')}>
+  title='8 Ball Pool'
+  image={require('./images/8bp.png')}>
   <Text style={{marginBottom: 10}}>
-    Are you fast enough !
+    Pot the ball !
   </Text>
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
- 
+        onPress={this._handlePressgd6}
+
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='VIEW NOW' />
 </Card>

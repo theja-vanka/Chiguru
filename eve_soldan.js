@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { View, Navigator, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import {Text} from 'react-native-elements';
-export default class Airdet extends Component {
+export default class Dance4 extends Component {
   static get defaultProps() {
     return {
       title: 'Events'

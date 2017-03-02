@@ -113,19 +113,7 @@ export default class Entdeta extends Component {
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
-<Card
-  title='Movie Spoof'
-  image={require('./images/moviespof.png')}>
-  <Text style={{marginBottom: 10}}>
-    Scary movie was just the beginning.
-  </Text>
-  <Button
-    icon={{name:'toc'}}
-     backgroundColor='#353a47'
- 
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='Details' />
-</Card>
+
 <Card
   title='Short Films'
   image={require('./images/shortfilm.png')}>
@@ -140,19 +128,7 @@ export default class Entdeta extends Component {
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
-<Card
-  title='Short Stories'
-  image={require('./images/sstory.png')}>
-  <Text style={{marginBottom: 10}}>
-    
-  </Text>
-  <Button
-    icon={{name:'toc'}}
-     backgroundColor='#353a47'
- 
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='Details' />
-</Card>
+
 
 
           </ScrollView>

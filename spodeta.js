@@ -27,6 +27,15 @@ export default class Spodeta extends Component {
       _handlePressfd6 = () => {
      this.props.navigator.push({name: 'card606',});
     };
+          _handlePressfd7 = () => {
+     this.props.navigator.push({name: 'card607',});
+    };
+              _handlePressfd8 = () => {
+     this.props.navigator.push({name: 'card608',});
+    };
+              _handlePressfd9 = () => {
+     this.props.navigator.push({name: 'card609',});
+    };
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -51,6 +60,21 @@ export default class Spodeta extends Component {
      icon={{name:'toc'}}
       backgroundColor='#353a47'
   onPress={this._handlePressfd1}
+
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Throwball (Women)'
+  image={require('./images/throw.png')}
+  wrapperstyle>
+  <Text style={{marginBottom: 10}}>
+    Why should boys have all the fun.
+  </Text>
+  <Button
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+  onPress={this._handlePressfd7}
 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
@@ -121,6 +145,34 @@ export default class Spodeta extends Component {
      icon={{name:'toc'}}
       backgroundColor='#353a47'
   onPress={this._handlePressfd6}
+
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Carrom'
+  image={require('./images/carr.png')}>
+  <Text style={{marginBottom: 10}}>
+    Let your fingers do the talking !
+  </Text>
+  <Button
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+  onPress={this._handlePressfd8}
+
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Table Tennis'
+  image={require('./images/tt.png')}>
+  <Text style={{marginBottom: 10}}>
+    Ping Pong !!
+  </Text>
+  <Button
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+  onPress={this._handlePressfd9}
 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />

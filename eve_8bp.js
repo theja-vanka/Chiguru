@@ -2,9 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { View, Navigator, StyleSheet, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import {Text} from 'react-native-elements';
-
-
-export default class Dance3 extends Component {
+export default class Game6 extends Component {
   static get defaultProps() {
     return {
       title: 'Events'
@@ -19,18 +17,13 @@ export default class Dance3 extends Component {
     this.props.navigator.pop();
   };
 
-  render() {
+render() {
     return (
 <View style={styles.container}><Text style={styles.welcome}>Rules</Text>
-<Text style={styles.points}>Each team should have a minimum of 6 members and a maximum of 12 members</Text>
-<Text style={styles.points}>All Indian movie songs are allowed as long as vulgarity is not portrayed</Text>
-<Text style={styles.points}>Time allotted: 6+1 minutes (inclusive of stage setup)  </Text>
-<Text style={styles.points}>Music must be submitted to the event coordinator 30 minutes prior to the event only in pendrive (.mp3 files only)</Text>
-<Text style={styles.points}>No tapori folk will be entertained </Text>
-<Text style={styles.points}>Props are allowed provided they are not dangerous   </Text>
-<Text style={styles.points}>Registration fee: Rs.800 </Text>
-<Text style={styles.points}>Prize money:- Winners: Rs.10000 Runners: Rs.5000 </Text>
-
+<Text style={styles.points}>Individual event</Text>
+<Text style={styles.points}>Rules will be conveyed at the venue</Text>
+<Text style={styles.points}>Registration fee: Rs.100</Text>
+<Text style={styles.points}>Prize money: Winners: Rs.1000 Runners: Rs.500</Text>
 
           </View>
     )

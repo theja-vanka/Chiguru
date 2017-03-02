@@ -32,6 +32,12 @@ import Try from './try';
 
 import Dance1 from './eve_fudan';
 
+import Dance2 from './eve_grpdan';
+
+import Dance3 from './eve_indfildan';
+
+import Dance4 from './eve_soldan';
+
 import Business1 from './eve_bstmanag';
 
 import Business2 from './eve_busplan';
@@ -48,6 +54,7 @@ import Game2 from './eve_fifa';
 import Game3 from './eve_minmilt';
 import Game4 from './eve_pokmn';
 import Game5 from './eve_uno';
+import Game6 from './eve_8bp';
 
 import Art1 from './eve_coll';
 import Art2 from './eve_fcepnt';
@@ -61,6 +68,9 @@ import Sport3 from './eve_gulcrkt';
 import Sport4 from './eve_slwdrgrc';
 import Sport5 from './eve_trshnt';
 import Sport6 from './eve_tow';
+import Sport7 from './eve_throw';
+import Sport8 from './eve_tt';
+import Sport9 from './eve_carom';
 
 import Ent1 from './eve_aircrash';
 import Ent2 from './eve_mime';
@@ -345,10 +355,6 @@ export default class Chiguru extends Component {
       return <Musdeta navigator={navigator}/>
       
     }
-     else if (route.name === 'card1'){
-      return <Dance1 navigator={navigator}/>
-      
-    }
     else if (route.name === 'card101'){
       return <Literacy1 navigator={navigator}/>
       
@@ -403,6 +409,9 @@ export default class Chiguru extends Component {
     }else if (route.name === 'card805'){
       return <Game5 navigator={navigator}/>
       
+    }else if (route.name === 'card806'){
+      return <Game6 navigator={navigator}/>
+      
     }
     else if (route.name === 'card701'){
       return <Art1 navigator={navigator}/>
@@ -431,6 +440,17 @@ export default class Chiguru extends Component {
     else if (route.name === 'card602'){
       return <Sport2 navigator={navigator}/>
       
+    }else if (route.name === 'card607'){
+      return <Sport7 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card608'){
+      return <Sport8 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card609'){
+      return <Sport9 navigator={navigator}/>
+      
     }
     else if (route.name === 'card603'){
       return <Sport3 navigator={navigator}/>
@@ -446,6 +466,14 @@ export default class Chiguru extends Component {
     }
     else if (route.name === 'card606'){
       return <Sport6 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card608'){
+      return <Sport8 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card609'){
+      return <Sport9 navigator={navigator}/>
       
     }
     else if (route.name === 'card501'){
@@ -482,6 +510,22 @@ export default class Chiguru extends Component {
     }
     else if (route.name === 'card403'){
       return <Mus3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card301'){
+      return <Dance1 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card302'){
+      return <Dance2 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card303'){
+      return <Dance3 navigator={navigator}/>
+      
+    }
+    else if (route.name === 'card304'){
+      return <Dance4 navigator={navigator}/>
       
     }
 
@@ -584,6 +628,10 @@ export default class Chiguru extends Component {
     else if (route.name === 'card805'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
+    else if (route.name === 'card806'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    
     else if (route.name === 'card701'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
@@ -614,6 +662,15 @@ export default class Chiguru extends Component {
      else if (route.name === 'card606'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
+    else if (route.name === 'card607'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card608'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card609'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
     else if (route.name === 'card501'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
@@ -639,6 +696,18 @@ export default class Chiguru extends Component {
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
      else if (route.name === 'card403'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card301'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card302'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card303'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card304'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
   }}

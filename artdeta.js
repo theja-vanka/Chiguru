@@ -52,19 +52,7 @@ export default class Artdeta extends Component {
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
-<Card
-  title='Doodles'
-  image={require('./images/doodle.png')}>
-  <Text style={{marginBottom: 10}}>
-    Draw your life.
-  </Text>
-  <Button
-     icon={{name:'toc'}}
-      backgroundColor='#353a47'
- 
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='Details' />
-</Card>
+
 <Card
   title='Face Painting'
   image={require('./images/face.png')}>

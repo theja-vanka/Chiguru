@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet,Navigator, ScrollView, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, StyleSheet,Linking,Navigator, ScrollView, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import {Text, Button, SocialIcon} from 'react-native-elements';
 export default class Contactus extends Component {
@@ -19,7 +19,6 @@ export default class Contactus extends Component {
 
   render() {
     return (
-      <ScrollView>
       <View style={styles.container}>
       <Text style={styles.welcome}> Contact Us
         </Text>
@@ -38,29 +37,19 @@ export default class Contactus extends Component {
           <View style={{flex: 1, flexDirection: 'row', alignItems: 'center',justifyContent: 'center'}}>
         <SocialIcon
     type='facebook'
+    onPress={() => Linking.openURL('https://www.facebook.com/chigurucitech/')}
       />
       <SocialIcon
     type='instagram'
+    onPress={() => Linking.openURL('https://www.instagram.com/chigurucitech/')}
       />
       <SocialIcon
     type='youtube'
+    onPress={() => Linking.openURL('https://www.youtube.com/channel/UCayNEVTqQidRY7XThhUOSrw')}
       />
       </View>
-      <View style={styles.dev}>
-          <Text style={styles.info}>Guided By:
-            </Text>
-            <Text style={styles.info1}>Pankaja K</Text>
-            <Text style={styles.info1}></Text>
-          </View>
-          <View style={styles.dev}>
-          <Text style={styles.infol}>Developer
-            </Text>
-            <Text style={styles.info11}>Krishnatheja Vanka</Text>
-            <Text style={styles.info11}>+91-9916596675</Text>
-            <Text style={styles.info11}>theja-vanka.github.io</Text>
-            
-          </View>
- <View style={styles.dev}>
+      
+ <View style={styles.dev1}>
           <Text style={styles.infol}>Art and Concept
             </Text>
             <Text style={styles.info11}>Shreyas M</Text>
@@ -68,7 +57,6 @@ export default class Contactus extends Component {
 </View>
          
         </View>
-        </ScrollView>
     )
   }
   componentDidMount() {
@@ -82,7 +70,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#0f0e20',
   },
   dev: {
-    flex: 2,
+    flex: 3,
+    margin: 20,
+    backgroundColor: '#353a47',
+  },
+   dev1: {
+    flex: 1,
     margin: 20,
     backgroundColor: '#353a47',
   },
