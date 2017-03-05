@@ -19,6 +19,7 @@ export default class Contactus extends Component {
 
   render() {
     return (
+      <ScrollView>
       <View style={styles.container}>
       <Text style={styles.welcome}> Contact Us
         </Text>
@@ -48,15 +49,23 @@ export default class Contactus extends Component {
     onPress={() => Linking.openURL('https://www.youtube.com/channel/UCayNEVTqQidRY7XThhUOSrw')}
       />
       </View>
-      
- <View style={styles.dev1}>
-          <Text style={styles.infol}>Art and Concept
+      <View style={styles.dev}>
+          <Text style={styles.info}>Developers
             </Text>
-            <Text style={styles.info11}>Shreyas M</Text>
-            <Text style={styles.info11}>+91-7892404817</Text>
+            <Text style={styles.info1}>Krishnatheja Vanka</Text>
+            <Text style={styles.info1}>theja-vanka.github.io</Text>
+            <Text style={styles.info1}>Manjunath Sangashetty</Text>
+            <Text style={styles.info1}>+91-8892105395</Text>
+</View>
+ <View style={styles.dev}>
+          <Text style={styles.info} >Art and Concept
+            </Text>
+            <Text style={styles.info1}>Shreyas M</Text>
+            <Text style={styles.info1}>+91-7892404817</Text>
 </View>
          
         </View>
+        </ScrollView>
     )
   }
   componentDidMount() {
@@ -74,11 +83,6 @@ const styles = StyleSheet.create({
     margin: 20,
     backgroundColor: '#353a47',
   },
-   dev1: {
-    flex: 1,
-    margin: 20,
-    backgroundColor: '#353a47',
-  },
   welcome: {
     fontSize: 23,
     textAlign: 'center',
@@ -86,7 +90,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
    info1: {
-    fontSize: 18,
+    fontSize: 14,
     textAlign: 'center',
     margin: 2,
     color: 'white',
