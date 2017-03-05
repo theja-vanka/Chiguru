@@ -9,7 +9,8 @@ import {
   BackAndroid,
   Animated,
   Easing,
-  TouchableOpacity
+  TouchableOpacity,
+  NetInfo
 } from 'react-native';
 
 import {Button, Icon} from 'react-native-elements';
@@ -105,8 +106,31 @@ class BackgroundLoc extends Component {
   super()
   this.springValue = new Animated.Value(0.3)
 }
+
+ state = {
+    isConnected: null,
+  };
+
+
+  componentWillUnmount() {
+    NetInfo.isConnected.removeEventListener(
+        'change',
+        this._handleConnectivityChange
+    );
+  }
+
+  _handleConnectivityChange = (isConnected) => {
+    this.setState({
+      isConnected,
+    });
+  };
  _handlePressc = () => {
+   if(this.state.isConnected){
      this.props.navigator.push({name: 'Loc',});
+   }
+   else {
+     alert('Connect to Internet!!');
+   }
     };
     render() {
         return (
@@ -122,7 +146,14 @@ class BackgroundLoc extends Component {
         );
     }
         componentDidMount () {
-  this.spring()
+  this.spring();
+   NetInfo.isConnected.addEventListener(
+        'change',
+        this._handleConnectivityChange
+    );
+    NetInfo.isConnected.fetch().done(
+        (isConnected) => { this.setState({isConnected}); }
+    );
 }
    spring () {
   this.springValue.setValue(0.3)
