@@ -127,6 +127,7 @@ const list2 = [
 
 <ScrollView>
       <Text h3 style={styles.heads}> Day 1 </Text>
+      <Text h5 style={styles.heads}> 11-Mar-2017 </Text>
       <List containerStyle={{marginBottom: 20}}>
   {
     list.map((l, i) => (
@@ -145,6 +146,8 @@ const list2 = [
   
 </List>
 <Text h3 style={styles.heads}> Day 2 </Text>
+      <Text h5 style={styles.heads}> 12-Mar-2017 </Text>
+
       <List containerStyle={{marginBottom: 20}}>
   {
     list2.map((l, i) => (
