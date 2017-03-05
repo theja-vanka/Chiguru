@@ -11,7 +11,8 @@ import {
   Easing,
   TouchableOpacity,
   NetInfo,
-  Linking
+  Linking,
+  ToastAndroid
 } from 'react-native';
 
 import {Button, Icon} from 'react-native-elements';
@@ -130,7 +131,7 @@ class BackgroundLoc extends Component {
      this.props.navigator.push({name: 'Loc',});
    }
    else {
-     alert('Connect to Internet!!');
+     ToastAndroid.showWithGravity('Connect To Internet', ToastAndroid.SHORT, ToastAndroid.CENTER);
    }
     };
     render() {
