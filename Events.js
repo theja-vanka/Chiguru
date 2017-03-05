@@ -69,7 +69,7 @@ class EntDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+919844329776', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+918892482450', true)}
 
                  title='Contact'>
             
@@ -285,7 +285,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/eve_fs.png')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_fs.jpg')}><View style={styles.container}><Text style={styles.welcome}>Fashion Show </Text>
          <FsDeta navigator={this.props.navigator}/>
           </View></Image></View>
 
@@ -294,7 +294,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/bob.png')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text>
+          resizeMode: 'cover' }} source={require('./images/bob.jpg')}><View style={styles.container}><Text style={styles.welcome}>Battle of Bands </Text>
         <BobDeta navigator={this.props.navigator}/>        
          </View></Image></View>
 
@@ -303,7 +303,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/dan.png')}><View style={styles.container}><Text style={styles.welcome}>Dance </Text>
+          resizeMode: 'cover' }} source={require('./images/dan.jpg')}><View style={styles.container}><Text style={styles.welcome}>Dance </Text>
           <DanDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
@@ -312,7 +312,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/eve_mus.png')}><View style={styles.container}><Text style={styles.welcome}>Musical </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_mus.jpg')}><View style={styles.container}><Text style={styles.welcome}>Musical </Text>
           <Musdeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
@@ -321,7 +321,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/eve_ent.png')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_ent.jpg')}><View style={styles.container}><Text style={styles.welcome}>Entertainment </Text>
           <EntDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
@@ -330,7 +330,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/sport.png')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text>
+          resizeMode: 'cover' }} source={require('./images/sport.jpg')}><View style={styles.container}><Text style={styles.welcome}>Sports </Text>
           <SpoDeta navigator={this.props.navigator}/>  
          </View></Image></View>
 
@@ -339,7 +339,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/rosalyn_verma.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
+          resizeMode: 'cover' }} source={require('./images/rosalyn_verma.jpg')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
           <ArtDeta navigator={this.props.navigator}/>  
          </View></Image></View>
 
@@ -348,7 +348,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/eve_gme.png')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
+          resizeMode: 'cover' }} source={require('./images/eve_gme.jpg')}><View style={styles.container}><Text style={styles.welcome}>Gaming </Text>
           <GmeDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 
@@ -357,7 +357,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/bus.png')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
+          resizeMode: 'cover' }} source={require('./images/bus.jpg')}><View style={styles.container}><Text style={styles.welcome}>Business </Text>
           <BusDeta navigator={this.props.navigator}/>  
           <View style={{flexDirection: 'row'}}>
          
@@ -368,7 +368,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/lit1.png')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
+          resizeMode: 'cover' }} source={require('./images/lit1.jpg')}><View style={styles.container}><Text style={styles.welcome}>Literary </Text>
           <LitDeta navigator={this.props.navigator}/>  
           </View></Image></View>
 

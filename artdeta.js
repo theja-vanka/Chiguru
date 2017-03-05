@@ -40,7 +40,7 @@ export default class Artdeta extends Component {
 
 <Card
   title='Collage'
-  image={require('./images/collage.png')}
+  image={require('./images/collage.jpg')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
    Put it together.
@@ -55,7 +55,7 @@ export default class Artdeta extends Component {
 
 <Card
   title='Face Painting'
-  image={require('./images/face.png')}>
+  image={require('./images/face.jpg')}>
   <Text style={{marginBottom: 10}}>
 Photoshop on your face.  </Text>
   <Button
@@ -67,7 +67,7 @@ Photoshop on your face.  </Text>
 </Card>
 <Card
   title='Nail Art'
-  image={require('./images/nail.png')}>
+  image={require('./images/nail.jpg')}>
   <Text style={{marginBottom: 10}}>
     Where Nails Meet Art.
   </Text>
@@ -80,7 +80,7 @@ Photoshop on your face.  </Text>
 </Card>
 <Card
   title='Photography'
-  image={require('./images/cam.png')}>
+  image={require('./images/cam.jpg')}>
   <Text style={{marginBottom: 10}}>
   Shoot em and frame them.
   </Text>
@@ -93,7 +93,7 @@ Photoshop on your face.  </Text>
 </Card>
 <Card
   title='Sketching'
-  image={require('./images/vector_sketch.png')}>
+  image={require('./images/vector_sketch.jpg')}>
   <Text style={{marginBottom: 10}}>
     Can you pull off a Neil Caffery
   </Text>

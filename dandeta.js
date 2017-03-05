@@ -36,7 +36,7 @@ export default class Dandeta extends Component {
 
 <Card
   title='Fusion Dance'
-  image={require('./images/fs1.png')}
+  image={require('./images/fs1.jpg')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
     Live. Love. Dance.
@@ -50,7 +50,7 @@ icon={{name:'toc'}}
 </Card>
 <Card
   title='Group Dance'
-  image={require('./images/grpdan.png')}>
+  image={require('./images/grpdan.jpg')}>
   <Text style={{marginBottom: 10}}>
   Are you bollywood enough ?  </Text>
   <Button
@@ -62,7 +62,7 @@ icon={{name:'toc'}}
 </Card>
 <Card
   title='Indian Filmy Dance'
-  image={require('./images/indiand.png')}>
+  image={require('./images/indiand.jpg')}>
   <Text style={{marginBottom: 10}}>
     Back to the roots !
     </Text>
@@ -76,7 +76,7 @@ icon={{name:'toc'}}
 </Card>
 <Card
   title='Solo Dance'
-  image={require('./images/solod.png')}>
+  image={require('./images/solod.jpg')}>
   <Text style={{marginBottom: 10}}>
     Break a leg !!
     </Text>

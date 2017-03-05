@@ -21,9 +21,10 @@ export default class Game1 extends Component {
     return (
 <View style={styles.container}><Text style={styles.welcome}>Rules</Text>
 <Text style={styles.points}>5 members per team</Text>
-<Text style={styles.points}>Players must bring their own Steam ID.</Text>
-<Text style={styles.points}>Registration fee: Rs.300  </Text>
-<Text style={styles.points}>Prize money: Winners: Rs.3000 Runners: 1500 </Text></View>
+<Text style={styles.points}>Players must bring thier own Steam ID.</Text>
+<Text style={styles.points}>Rules will be conveyed at the venue</Text>
+<Text style={styles.points}>Registration fee: Rs.500 </Text>
+<Text style={styles.points}>Prize Money: Winner: Rs.5000 Runner: Rs.2500</Text></View>
     )
   }
   componentDidMount() {

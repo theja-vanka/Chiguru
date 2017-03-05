@@ -7,7 +7,7 @@ class BackgroundImage extends Component {
   
     render() {
         return (
-            <Image source={require('./images/camb.png')}
+            <Image source={require('./images/camb.jpg')}
                   style={styles.backgroundImage}>
 
    {this.props.children}

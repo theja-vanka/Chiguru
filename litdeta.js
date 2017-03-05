@@ -38,7 +38,7 @@ export default class Litdeta extends Component {
 
 <Card
   title='Thatt Antha Heli'
-  image={require('./images/qck.png')}
+  image={require('./images/qck.jpg')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
     Are you quick enough ?
@@ -53,7 +53,7 @@ export default class Litdeta extends Component {
 </Card>
 <Card
   title='Criminal Case'
-  image={require('./images/criminal.png')}>
+  image={require('./images/criminal.jpg')}>
   <Text style={{marginBottom: 10}}>
   Just Detective stuff !  </Text>
   <Button
@@ -66,7 +66,7 @@ export default class Litdeta extends Component {
 </Card>
 <Card
   title='Paper Plane'
-  image={require('./images/paperpl.png')}>
+  image={require('./images/paperpl.jpg')}>
   <Text style={{marginBottom: 10}}>
    Drop drag to fly.
   </Text>
@@ -80,7 +80,7 @@ export default class Litdeta extends Component {
 </Card>
 <Card
   title='Aashubashane'
-  image={require('./images/spk.png')}>
+  image={require('./images/spk.jpg')}>
   <Text style={{marginBottom: 10}}>
     Kannada Speech.
   </Text>

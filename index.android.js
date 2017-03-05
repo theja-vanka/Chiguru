@@ -56,6 +56,7 @@ import Game3 from './eve_minmilt';
 import Game4 from './eve_pokmn';
 import Game5 from './eve_uno';
 import Game6 from './eve_8bp';
+import Game7 from './eve_dota';
 
 import Art1 from './eve_coll';
 import Art2 from './eve_fcepnt';
@@ -425,6 +426,10 @@ export default class Chiguru extends Component {
       return <Game6 navigator={navigator}/>
       
     }
+    else if (route.name === 'card807'){
+      return <Game7 navigator={navigator}/>
+      
+    }
     else if (route.name === 'card701'){
       return <Art1 navigator={navigator}/>
       
@@ -641,6 +646,9 @@ export default class Chiguru extends Component {
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
     else if (route.name === 'card806'){
+      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+    }
+    else if (route.name === 'card807'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }
     

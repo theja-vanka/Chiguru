@@ -27,6 +27,9 @@ export default class Gmedeta extends Component {
        _handlePressgd6 = () => {
      this.props.navigator.push({name: 'card806',});
     };
+           _handlePressgd7 = () => {
+     this.props.navigator.push({name: 'card807',});
+    };
   onBackPress(){
     this.props.navigator.pop();
     return true; 
@@ -42,7 +45,7 @@ export default class Gmedeta extends Component {
 
 <Card
   title='Counter Strike'
-  image={require('./images/cs.png')}
+  image={require('./images/cs.jpg')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
   Are you geek enough ?  </Text>
@@ -55,8 +58,22 @@ export default class Gmedeta extends Component {
     title='Details' />
 </Card>
 <Card
+  title='DoTA 2'
+  image={require('./images/dota2.jpg')}
+  wrapperstyle>
+  <Text style={{marginBottom: 10}}>
+  So begins a new age of knowledge.  </Text>
+  <Button
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+       onPress={this._handlePressgd7}
+
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
   title='FIFA'
-  image={require('./images/fifa.png')}>
+  image={require('./images/fifa.jpg')}>
   <Text style={{marginBottom: 10}}>
    Its not just a game. Its a religion.
   </Text>
@@ -70,7 +87,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='Mini Militia'
-  image={require('./images/mini.png')}>
+  image={require('./images/mini.jpg')}>
   <Text style={{marginBottom: 10}}>
    No lag please. </Text>
   <Button
@@ -83,7 +100,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='8 Ball Pool'
-  image={require('./images/8bp.png')}>
+  image={require('./images/8bp.jpg')}>
   <Text style={{marginBottom: 10}}>
     Pot the ball !
   </Text>
@@ -97,7 +114,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='Pokemon Go'
-  image={require('./images/pgo.png')}>
+  image={require('./images/pgo.jpg')}>
   <Text style={{marginBottom: 10}}>
     
     Gotta Catch'em All.
@@ -112,7 +129,7 @@ export default class Gmedeta extends Component {
 </Card>
 <Card
   title='UNO'
-  image={require('./images/uno.png')}>
+  image={require('./images/uno.jpg')}>
   <Text style={{marginBottom: 10}}>
     Give your friend a draw 4.
   </Text>

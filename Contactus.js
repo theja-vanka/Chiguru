@@ -47,6 +47,8 @@ export default class Contactus extends Component {
             <Button   backgroundColor='rgba(0,0,0,0.1)' title='Haneesh' onPress={() => Communications.phonecall('+917760683399', true)} ></Button>
              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Varun' onPress={() => Communications.phonecall('+919620096500', true)} ></Button>
               <Button   backgroundColor='rgba(0,0,0,0.1)' title='Ranjeet' onPress={() => Communications.phonecall('+919741894545', true)} ></Button>
+              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Vinod' onPress={() => Communications.phonecall('+919449443703', true)} ></Button>
+              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Jithendra' onPress={() => Communications.phonecall('+919742147418', true)} ></Button>
 
           </View>
 

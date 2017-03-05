@@ -10,7 +10,8 @@ import {
   Animated,
   Easing,
   TouchableOpacity,
-  NetInfo
+  NetInfo,
+  Linking
 } from 'react-native';
 
 import {Button, Icon} from 'react-native-elements';
@@ -204,6 +205,41 @@ class BackgroundCon extends Component {
   ).start()
 }
 }
+class BackgroundReg extends Component {
+  constructor () {
+  super()
+  this.springValue = new Animated.Value(0.3)
+}
+    render() {
+        return (
+
+     <Animated.View style={[styles.matchline,{ transform: [{scale: this.springValue}] }]}  >
+      <Icon
+      reverse
+  name='receipt'
+  color='#02124c'
+    onPress={() => Linking.openURL('https://www.explara.com/e/chiguru2017/checkout')}
+/> 
+<Text style={styles.catego} onPress={() => Linking.openURL('https://www.explara.com/e/chiguru2017/checkout')}>Register</Text>
+</Animated.View>
+        
+        );
+    }
+    componentDidMount () {
+  this.spring()
+}
+   spring () {
+  this.springValue.setValue(0.3)
+  Animated.spring(
+    this.springValue,
+    {
+      toValue: 1,
+      friction: 1
+    }
+  ).start()
+}
+}
+
 
 
 
@@ -251,6 +287,7 @@ export default class Home extends Component {
 
 <BackgroundLoc navigator={this.props.navigator}/>
 <BackgroundCon navigator={this.props.navigator}/>
+<BackgroundReg navigator={this.props.navigator}/>
 
   </BackgroundImage>
          

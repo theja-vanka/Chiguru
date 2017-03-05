@@ -40,7 +40,7 @@ export default class Busdeta extends Component {
 
 <Card
   title='Best Manager'
-  image={require('./images/manager1.png')}
+  image={require('./images/manager1.jpg')}
   wrapperstyle>
   <Text style={{marginBottom: 10}}>
     "My success comes from my team."
@@ -55,7 +55,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Business Plan'
-  image={require('./images/busplan.png')}>
+  image={require('./images/busplan.jpg')}>
   <Text style={{marginBottom: 10}}>
    "My vision is..."
   </Text>
@@ -69,7 +69,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Business Quiz'
-  image={require('./images/bquiz.png')}>
+  image={require('./images/bquiz.jpg')}>
   <Text style={{marginBottom: 10}}>
     The idea with React Native Elements is more about component structure than actual design.
   </Text>
@@ -83,7 +83,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Case Analysis'
-  image={require('./images/casess.png')}>
+  image={require('./images/casess.jpg')}>
   <Text style={{marginBottom: 10}}>
     Sherlock, Watson or Anderson !
   </Text>
@@ -97,7 +97,7 @@ export default class Busdeta extends Component {
 </Card>
 <Card
   title='Product Launch'
-  image={require('./images/product.png')}>
+  image={require('./images/product.jpg')}>
   <Text style={{marginBottom: 10}}>
 Innovation meets creation.  </Text>
   <Button
