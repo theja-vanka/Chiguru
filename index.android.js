@@ -540,9 +540,9 @@ export default class Chiguru extends Component {
     } else if (route.name === 'Events'){
       return Navigator.SceneConfigs.FloatFromRight;
     } else if (route.name === 'Contact'){
-      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
     } else if (route.name === 'Schedule'){
-      return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
+      return Navigator.SceneConfigs.VerticalUpSwipeJump;
     }else if (route.name === 'Loc'){
       return Navigator.SceneConfigs.HorizontalSwipeJumpFromRight;
     }else if (route.name === 'Sponsor'){
