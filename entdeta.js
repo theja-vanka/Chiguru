@@ -26,6 +26,12 @@ export default class Entdeta extends Component {
  _handlePressfd6 = () => {
      this.props.navigator.push({name: 'card506',});
     };
+       _handlePressfd5e = () => {
+     this.props.navigator.push({name: 'card605',});
+    };
+      _handlePressfd3e = () => {
+     this.props.navigator.push({name: 'card103',});
+    };
 
   
   onBackPress(){
@@ -109,6 +115,34 @@ export default class Entdeta extends Component {
     icon={{name:'toc'}}
      backgroundColor='#353a47'
   onPress={this._handlePressfd5}
+
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title='Details' />
+</Card>
+<Card
+  title='Paper Plane'
+  image={require('./images/paperpl.jpg')}>
+  <Text style={{marginBottom: 10}}>
+   Drop drag to fly.
+  </Text>
+  <Button
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+      onPress={this._handlePressfd3e}
+ 
+    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+    title= 'Details' />
+</Card>
+<Card
+  title='Treasure Hunt'
+  image={require('./images/thunt.jpg')}>
+  <Text style={{marginBottom: 10}}>
+    Decrypt this. 'UPHWXOYW'
+  </Text>
+  <Button
+     icon={{name:'toc'}}
+      backgroundColor='#353a47'
+  onPress={this._handlePressfd5e}
 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />

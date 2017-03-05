@@ -49,7 +49,7 @@ icon={{name:'toc'}}
     title='Details' />
 </Card>
 <Card
-  title='Group Dance'
+  title='Group Dance (Classical/Contemporary/Folk)'
   image={require('./images/grpdan.jpg')}>
   <Text style={{marginBottom: 10}}>
   Are you bollywood enough ?  </Text>

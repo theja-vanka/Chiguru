@@ -9,16 +9,13 @@ export default class Litdeta extends Component {
       title: 'Events'
     };
   }
-  _handlePressfd = () => {
+  _handlePressfd1 = () => {
      this.props.navigator.push({name: 'card101',});
     };
-  _handlePressfd = () => {
+  _handlePressfd2 = () => {
      this.props.navigator.push({name: 'card102',});
     };
-  _handlePressfd = () => {
-     this.props.navigator.push({name: 'card103',});
-    };
-  _handlePressfd = () => {
+  _handlePressfd4 = () => {
      this.props.navigator.push({name: 'card104',});
     };
 
@@ -46,7 +43,7 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
-      onPress={this._handlePressfd}
+      onPress={this._handlePressfd1}
 
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
@@ -59,25 +56,12 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
-      onPress={this._handlePressfd}
+      onPress={this._handlePressfd2}
  
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
-<Card
-  title='Paper Plane'
-  image={require('./images/paperpl.jpg')}>
-  <Text style={{marginBottom: 10}}>
-   Drop drag to fly.
-  </Text>
-  <Button
-     icon={{name:'toc'}}
-      backgroundColor='#353a47'
-      onPress={this._handlePressfd}
- 
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title= 'Details' />
-</Card>
+
 <Card
   title='Aashubashane'
   image={require('./images/spk.jpg')}>
@@ -87,7 +71,7 @@ export default class Litdeta extends Component {
   <Button
      icon={{name:'toc'}}
       backgroundColor='#353a47'
-      onPress={this._handlePressfd}
+      onPress={this._handlePressfd4}
  
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title= 'Details' />

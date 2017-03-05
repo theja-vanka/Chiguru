@@ -21,9 +21,7 @@ export default class Spodeta extends Component {
   _handlePressfd4 = () => {
      this.props.navigator.push({name: 'card604',});
     };
-   _handlePressfd5 = () => {
-     this.props.navigator.push({name: 'card605',});
-    };
+
       _handlePressfd6 = () => {
      this.props.navigator.push({name: 'card606',});
     };
@@ -121,20 +119,7 @@ export default class Spodeta extends Component {
     buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
     title='Details' />
 </Card>
-<Card
-  title='Treasure Hunt'
-  image={require('./images/thunt.jpg')}>
-  <Text style={{marginBottom: 10}}>
-    Decrypt this. 'UPHWXOYW'
-  </Text>
-  <Button
-     icon={{name:'toc'}}
-      backgroundColor='#353a47'
-  onPress={this._handlePressfd5}
 
-    buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-    title='Details' />
-</Card>
 <Card
   title='Tug of War'
   image={require('./images/tuffwar.jpg')}>
