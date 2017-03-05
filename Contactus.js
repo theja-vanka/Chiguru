@@ -24,17 +24,19 @@ export default class Contactus extends Component {
     return (
       <ScrollView>
       <View style={styles.container}>
-      <Text style={styles.welcome}> Contact Us
-        </Text>
         <View style={styles.dev}>
-          <Text style={styles.info}>Co-ordinators
-            </Text>
-            <Text style={styles.info1}>Raghav Chakravarthy</Text>
-            <Text style={styles.info1}>+91-8951170746</Text>
-            <Text style={styles.info1}>Sohan Singh</Text>
-            <Text style={styles.info1}>+91-8951513227</Text>
-            <Text style={styles.info1}>Haneesh</Text>
-            <Text style={styles.info1}>+91-7760683399</Text>
+             <Button icon={{name: 'android'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Developers' ></Button>
+            <Button  large backgroundColor='rgba(0,0,0,0.1)' title='Krishnatheja Vanka' onPress={() => Linking.openURL('https://theja-vanka.github.io/')} ></Button>
+            <Button  large backgroundColor='rgba(0,0,0,0.1)' title='Manjunath Sangashetty' onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
+</View>
+        <View style={styles.dev}>
+     <Button icon={{name: 'group'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Co-ordinators' ></Button>
+
+            <Button  large backgroundColor='rgba(0,0,0,0.1)' title='Raghav Chakravarthy' onPress={() => Communications.phonecall('+918951170746', true)} ></Button>
+
+             <Button  large backgroundColor='rgba(0,0,0,0.1)' title='Sohan Singh' onPress={() => Communications.phonecall('+918951513227', true)} ></Button>
+  
+            <Button  large backgroundColor='rgba(0,0,0,0.1)' title='Haneesh' onPress={() => Communications.phonecall('+917760683399', true)} ></Button>
 
           </View>
 
@@ -52,17 +54,10 @@ export default class Contactus extends Component {
     onPress={() => Linking.openURL('https://www.youtube.com/channel/UCayNEVTqQidRY7XThhUOSrw')}
       />
       </View>
-      <View style={styles.dev}>
-          <Text style={styles.info}>Developers
-            </Text>
-            <Button  large backgroundColor='rgba(0,0,0,0)' title='Krishnatheja Vanka' onPress={() => Linking.openURL('https://theja-vanka.github.io/')} ></Button>
-            <Button  large backgroundColor='rgba(0,0,0,0)' title='Manjunath Sangashetty' onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
-</View>
+      
  <View style={styles.dev}>
-          <Text style={styles.info} >Art and Concept
-            </Text>
-            <Text style={styles.info1}>Shreyas M</Text>
-            <Text style={styles.info1}>+91-7892404817</Text>
+   <Button icon={{name: 'bubble-chart'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Art and Concept' ></Button>
+            <Button  large backgroundColor='rgba(0,0,0,0.1)' title='Shreyas M' onPress={() => Communications.phonecall('+917892404817', true)} ></Button> 
 </View>
          
         </View>
