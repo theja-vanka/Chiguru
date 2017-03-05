@@ -45,7 +45,7 @@ class BackgroundEvents extends Component {
   onPress={this._handlePressa}
 
 />
-<Text style={styles.catego}>Events</Text>
+<Text style={styles.catego}  onPress={this._handlePressa}>Events</Text>
 
 </Animated.View>
         );
@@ -82,7 +82,7 @@ class BackgroundSchedule extends Component {
   color='#e9cd1e'
     onPress={this._handlePressb}
 />
-<Text style={styles.catego}>Schedule</Text>
+<Text style={styles.catego} onPress={this._handlePressb}>Schedule</Text>
 </Animated.View>
         );
     }
@@ -117,7 +117,7 @@ class BackgroundLoc extends Component {
   color='#bf4027'
     onPress={this._handlePressc}
 />
-<Text style={styles.catego}>Location</Text>
+<Text style={styles.catego} onPress={this._handlePressc}>Location</Text>
 </Animated.View>
         );
     }
@@ -154,7 +154,7 @@ class BackgroundCon extends Component {
   color='#0f8f46'
     onPress={this._handlePressd}
 /> 
-<Text style={styles.catego}>Contact Us</Text>
+<Text style={styles.catego} onPress={this._handlePressd}>Contact Us</Text>
 </Animated.View>
         
         );
