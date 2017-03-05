@@ -190,7 +190,7 @@ export default class Home extends Component {
   }
     onBackPress(){
     this.props.navigator.pop();
-    return true; 
+    return false; 
 }
 
   goBack = () => {

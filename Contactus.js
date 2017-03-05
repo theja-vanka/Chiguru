@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { View, StyleSheet,Linking,Navigator, ScrollView, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
+import Communications from 'react-native-communications';
+
+
 import {Text, Button, SocialIcon} from 'react-native-elements';
 export default class Contactus extends Component {
   static get defaultProps() {
@@ -52,10 +55,8 @@ export default class Contactus extends Component {
       <View style={styles.dev}>
           <Text style={styles.info}>Developers
             </Text>
-            <Text style={styles.info1}>Krishnatheja Vanka</Text>
-            <Text style={styles.info1}>theja-vanka.github.io</Text>
-            <Text style={styles.info1}>Manjunath Sangashetty</Text>
-            <Text style={styles.info1}>+91-8892105395</Text>
+            <Button  large backgroundColor='rgba(0,0,0,0)' title='Krishnatheja Vanka' onPress={() => Linking.openURL('https://theja-vanka.github.io/')} ></Button>
+            <Button  large backgroundColor='rgba(0,0,0,0)' title='Manjunath Sangashetty' onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
 </View>
  <View style={styles.dev}>
           <Text style={styles.info} >Art and Concept
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
      info: {
     fontSize: 23,
     textAlign: 'center',
-    margin: 10,
+
     color: 'white',
   },
       infol: {
