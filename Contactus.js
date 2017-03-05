@@ -24,6 +24,18 @@ export default class Contactus extends Component {
     return (
       <ScrollView>
       <View style={styles.container}>
+
+        <View style={styles.dev}>
+             <Button icon={{name: 'android'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Developers' ></Button>
+            <Button   backgroundColor='rgba(0,0,0,0.1)' title='Krishnatheja Vanka' onPress={() => Linking.openURL('https://theja-vanka.github.io/')} ></Button>
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Manjunath Sangashetty' onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
+</View>
+<View style={styles.dev}>
+   <Button icon={{name: 'bubble-chart'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Art and Concept' ></Button>
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Jeffrey Samuel Ronald' onPress={() => Communications.phonecall('+919886160464', true)} ></Button> 
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Shreyas M' onPress={() => Communications.phonecall('+917892404817', true)} ></Button> 
+
+</View>
         
         <View style={styles.dev}>
      <Button icon={{name: 'group'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Co-ordinators' ></Button>
@@ -52,18 +64,9 @@ export default class Contactus extends Component {
     onPress={() => Linking.openURL('https://www.youtube.com/channel/UCayNEVTqQidRY7XThhUOSrw')}
       />
       </View>
-      <View style={styles.dev}>
-             <Button icon={{name: 'android'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Developers' ></Button>
-            <Button   backgroundColor='rgba(0,0,0,0.1)' title='Krishnatheja Vanka' onPress={() => Linking.openURL('https://theja-vanka.github.io/')} ></Button>
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Manjunath Sangashetty' onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
-</View>
       
- <View style={styles.dev}>
-   <Button icon={{name: 'bubble-chart'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Art and Concept' ></Button>
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Jeffrey Samuel Ronald' onPress={() => Communications.phonecall('+919886160464', true)} ></Button> 
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Shreyas M' onPress={() => Communications.phonecall('+917892404817', true)} ></Button> 
-
-</View>
+      
+ 
          
         </View>
         </ScrollView>

@@ -14,6 +14,7 @@ import {
   Animated,
   Easing,
   Navigator,
+  BackAndroid,
   TouchableWithoutFeedback
 } from 'react-native';
 
@@ -279,6 +280,14 @@ animation () {
 
 
 class Chiguru1 extends Component {
+  onBackPress(){
+    this.props.navigator.pop();
+    return false; 
+}
+
+  goBack = () => {
+    this.props.navigator.pop();
+  };
   render() {
   
     return (
@@ -294,6 +303,9 @@ class Chiguru1 extends Component {
       </BackgroundImage>
     );
   }
+  componentDidMount() {
+    BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
+}
 
 }
 
