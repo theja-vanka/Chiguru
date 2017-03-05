@@ -16,16 +16,17 @@ export default class Game5 extends Component {
   goBack = () => {
     this.props.navigator.pop();
   };
-
-  render() {
+render() {
     return (
 <View style={styles.container}><Text style={styles.welcome}>Rules</Text>
 <Text style={styles.points}>Individual event</Text>
 <Text style={styles.points}>Rules will be conveyed at the venue</Text>
 <Text style={styles.points}>Registration fee: Rs.50</Text>
-<Text style={styles.points}>Prize money: Winners: Rs.1000 Runners: Rs.500</Text>          </View>
+<Text style={styles.points}>Prize money: Winners: Rs.1000 Runners: Rs.500</Text>
+
+          </View>
     )
-  }
+}
   componentDidMount() {
     BackAndroid.addEventListener('hardwareBackPress', this.onBackPress.bind(this));
 }

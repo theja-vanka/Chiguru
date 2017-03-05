@@ -24,7 +24,7 @@ class FsDeta extends Component {
                  title='Details'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+918197855719', true)}
 
                  title='Contact'>
             
@@ -46,7 +46,7 @@ class BobDeta extends Component {
                  title='Details'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+919886160464', true)}
 
                  title='Contact'>
             
@@ -69,7 +69,7 @@ class EntDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+919844329776', true)}
 
                  title='Contact'>
             
@@ -92,7 +92,7 @@ class SpoDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+919686448865', true)}
 
                  title='Contact'>
             
@@ -115,7 +115,7 @@ class ArtDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+918553806546', true)}
 
                  title='Contact'>
             
@@ -138,7 +138,7 @@ class GmeDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+919066324604', true)}
 
                  title='Contact'>
             
@@ -161,7 +161,7 @@ class BusDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+918123413998', true)}
 
                  title='Contact'>
             
@@ -184,7 +184,7 @@ class LitDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+919844329776', true)}
                  title='Contact'>
             
             </Button>
@@ -206,7 +206,7 @@ class DanDeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+918553338827', true)}
                  title='Contact'>
             
             </Button>
@@ -228,7 +228,7 @@ class Musdeta extends Component {
                  title='Explore'>
             
             </Button>
-             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+917760683399', true)}
+             <Button backgroundColor= 'rgba(1,0,1,0.7)' icon={{name: 'perm-phone-msg'}} onPress={() => Communications.phonecall('+918884943183', true)}
                  title='Contact'>
             
             </Button>
