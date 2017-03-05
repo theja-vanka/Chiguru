@@ -339,7 +339,7 @@ export default class Events extends Component {
           flex: 1,
           width: null,
           height: null,
-          resizeMode: 'cover' }} source={require('./images/art.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
+          resizeMode: 'cover' }} source={require('./images/rose.png')}><View style={styles.container}><Text style={styles.welcome}>Arts </Text>
           <ArtDeta navigator={this.props.navigator}/>  
          </View></Image></View>
 
