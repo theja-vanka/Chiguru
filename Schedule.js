@@ -125,7 +125,7 @@ const list2 = [
 ]
     return (
 
-<ScrollView>
+<ScrollView styles={styles.backit}>
       <Text h3 style={styles.heads}> Day 1 </Text>
       <Text h5 style={styles.heads}> 11-Mar-2017 </Text>
       <List containerStyle={{marginBottom: 20}}>

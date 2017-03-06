@@ -27,28 +27,28 @@ export default class Contactus extends Component {
 
         <View style={styles.dev}>
              <Button icon={{name: 'android'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Developers' ></Button>
-            <Button   backgroundColor='rgba(0,0,0,0.1)' title='Krishnatheja Vanka' onPress={() => Linking.openURL('https://theja-vanka.github.io/')} ></Button>
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Manjunath Sangashetty' onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
+            <Button   backgroundColor='rgba(0,0,0,0.1)' title='Krishnatheja Vanka'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+919916596675', true)} ></Button>
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Manjunath Sangashetty'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+918892105395', true)} ></Button>
 </View>
 <View style={styles.dev}>
    <Button icon={{name: 'bubble-chart'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Art and Concept' ></Button>
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Jeffrey Samuel Ronald' onPress={() => Communications.phonecall('+919886160464', true)} ></Button> 
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Shreyas M' onPress={() => Communications.phonecall('+917892404817', true)} ></Button> 
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Jeffrey Samuel Ronald'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+919886160464', true)} ></Button> 
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Shreyas M'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+917892404817', true)} ></Button> 
 
 </View>
         
         <View style={styles.dev}>
      <Button icon={{name: 'group'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Co-ordinators' ></Button>
 
-            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Raghav Chakravarthy' onPress={() => Communications.phonecall('+918951170746', true)} ></Button>
+            <Button  backgroundColor='rgba(0,0,0,0.1)' title='Raghav Chakravarthy'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+918951170746', true)} ></Button>
 
-             <Button  backgroundColor='rgba(0,0,0,0.1)' title='Sohan Singh' onPress={() => Communications.phonecall('+918951513227', true)} ></Button>
+             <Button  backgroundColor='rgba(0,0,0,0.1)' title='Sohan Singh'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+918951513227', true)} ></Button>
   
-            <Button   backgroundColor='rgba(0,0,0,0.1)' title='Haneesh' onPress={() => Communications.phonecall('+917760683399', true)} ></Button>
-             <Button   backgroundColor='rgba(0,0,0,0.1)' title='Varun' onPress={() => Communications.phonecall('+919620096500', true)} ></Button>
-              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Ranjeet' onPress={() => Communications.phonecall('+919741894545', true)} ></Button>
-              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Vinod' onPress={() => Communications.phonecall('+919449443703', true)} ></Button>
-              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Jithendra' onPress={() => Communications.phonecall('+919742147418', true)} ></Button>
+            <Button   backgroundColor='rgba(0,0,0,0.1)' title='Haneesh'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+917760683399', true)} ></Button>
+             <Button   backgroundColor='rgba(0,0,0,0.1)' title='Varun'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+919620096500', true)} ></Button>
+              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Ranjeet'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+919741894545', true)} ></Button>
+              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Vinod'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+919449443703', true)} ></Button>
+              <Button   backgroundColor='rgba(0,0,0,0.1)' title='Jithendra'   icon={{name: 'call'}} onPress={() => Communications.phonecall('+919742147418', true)} ></Button>
 
           </View>
 
@@ -91,36 +91,31 @@ const styles = StyleSheet.create({
   },
   welcome: {
     fontSize: 23,
-    textAlign: 'center',
     margin: 10,
     color: 'white',
   },
    info1: {
     fontSize: 14,
-    textAlign: 'center',
     margin: 2,
     color: 'white',
   },
     info11: {
     fontSize: 12,
-    textAlign: 'center',
     margin: 2,
     color: 'white',
   },
      info: {
     fontSize: 23,
-    textAlign: 'center',
+   
 
     color: 'white',
   },
       infol: {
     fontSize: 15,
-    textAlign: 'center',
     margin: 10,
     color: 'white',
   },
   instructions: {
-    textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
   },
