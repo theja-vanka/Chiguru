@@ -37,7 +37,7 @@ export default class Offstg2 extends Component {
     },
     {
     name: 'Beat Boxing (Round-1)',
-    subtitle: '10:00 AM - 04:00 PM \n Venue: 1nd Floor Seminar Hall',
+    subtitle: '10:30 AM - 01:30 PM \n Venue: 2nd Floor Seminar Hall',
     icon: 'event',
     ricon: 'phone',
     phone: () => Communications.phonecall('+918884943183', true),
