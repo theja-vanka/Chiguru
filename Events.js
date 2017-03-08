@@ -1,12 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { View,Image, StyleSheet, Navigator, Dimensions,BackAndroid } from 'react-native';
 
-import Carousel from 'react-native-looped-carousel';
-
 import {Text, Button} from 'react-native-elements';
 
 import Communications from 'react-native-communications';
 
+import Swiper from 'react-native-swiper';
 
 const { width, height } = Dimensions.get('window');
 
@@ -273,13 +272,7 @@ export default class Events extends Component {
     return (
      <View style={{ flex: 1 }} onLayout={this._onLayoutDidChange}>
          
-        <Carousel
-          style={this.state.size}
-          bullets
-          autoplay = {false}
-          currentpage
-          onAnimateNextPage={(p) => console.log(p)}
-        >
+        <Swiper style={this.state.size} showsButtons={false}  autoplay={true} autoplayTimeout={3} >
           <View style={[this.state.size]}>
             <Image style={{
           flex: 1,
@@ -374,7 +367,7 @@ export default class Events extends Component {
 
           
 
-        </Carousel>
+        </Swiper>
       </View>
     )
   }

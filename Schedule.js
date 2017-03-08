@@ -14,6 +14,12 @@ export default class Schedule extends Component {
     this.props.navigator.pop();
     return true; 
 }
+  _handlePress1 = () => {
+     this.props.navigator.push({name: 'offstg1',});
+    };
+  _handlePress2 = () => {
+     this.props.navigator.push({name: 'offstg2',});
+    };
 
   goBack = () => {
     this.props.navigator.pop();
@@ -66,6 +72,11 @@ export default class Schedule extends Component {
     icon: 'event',
     ricon: 'phone',
     phone: () => Communications.phonecall('+918197855719', true),
+  },
+  {
+    name: 'Off-stage Events',
+    icon: 'domain',
+    phone: this._handlePress1,
   },
 ]
 const list2 = [
@@ -122,13 +133,18 @@ const list2 = [
     icon: 'event',
     ricon: 'adjust',
   },
+  {
+    name: 'Off-stage Events',
+    icon: 'domain',
+    phone: this._handlePress2,
+  },
 ]
     return (
-
-<ScrollView styles={styles.backit}>
+<View style={styles.bgclr}>
+<ScrollView>
       <Text h3 style={styles.heads}> Day 1 </Text>
-      <Text h5 style={styles.heads}> 11-Mar-2017 </Text>
-      <List containerStyle={{marginBottom: 20}}>
+      <Text h5 style={styles.heads}>{"\n"} 11-Mar-2017 </Text>
+      <List>
   {
     list.map((l, i) => (
       <ListItem
@@ -146,9 +162,9 @@ const list2 = [
   
 </List>
 <Text h3 style={styles.heads}> Day 2 </Text>
-      <Text h5 style={styles.heads}> 12-Mar-2017 </Text>
+      <Text h5 style={styles.heads}>{"\n"} 12-Mar-2017 </Text>
 
-      <List containerStyle={{marginBottom: 20}}>
+      <List>
   {
     list2.map((l, i) => (
       <ListItem
@@ -165,7 +181,7 @@ const list2 = [
   }
   
 </List>
-</ScrollView>
+</ScrollView></View>
 
     )
   }
@@ -175,8 +191,10 @@ const list2 = [
 }
 const styles = StyleSheet.create({
   heads: {
-    margin: 10,
    textAlign:'center',
+   backgroundColor: '#050606',
   },
- 
+  bgclr: {
+   backgroundColor: '#050606',
+  },
 });

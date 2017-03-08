@@ -71,8 +71,8 @@ import Sport4 from './eve_slwdrgrc';
 import Sport5 from './eve_trshnt';
 import Sport6 from './eve_tow';
 import Sport7 from './eve_throw';
-import Sport8 from './eve_tt';
-import Sport9 from './eve_carom';
+import Sport8 from './eve_carom';
+import Sport9 from './eve_tt';
 
 import Ent1 from './eve_aircrash';
 import Ent2 from './eve_mime';
@@ -119,6 +119,12 @@ import Dandeta from './dandeta';
 import Musdeta from './musdeta';
 
 import Airdet from './Aircrash';
+
+import Offstg1 from './schedule1_offstg';
+
+import Offstg2 from './schedule2_offstg';
+
+
 
 class BackgroundImage extends Component {
   
@@ -346,6 +352,12 @@ export default class Chiguru extends Component {
       
     }else if (route.name === 'spodetails'){
       return <Spodeta navigator={navigator}/>
+
+    }else if (route.name === 'offstg1'){
+      return <Offstg1 navigator={navigator}/>
+
+    }else if (route.name === 'offstg2'){
+      return <Offstg2 navigator={navigator}/>  
       
     }else if (route.name === 'artdetails'){
       return <Artdeta navigator={navigator}/>
@@ -581,6 +593,12 @@ export default class Chiguru extends Component {
     }
     else if (route.name === 'spodetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;
+    }
+    else if (route.name === 'offstg1'){
+      return Navigator.SceneConfigs.FloatFromRight;
+    }
+    else if (route.name === 'offstg2'){
+      return Navigator.SceneConfigs.FloatFromRight;
     }
     else if (route.name === 'artdetails'){
       return Navigator.SceneConfigs.VerticalUpSwipeJump;

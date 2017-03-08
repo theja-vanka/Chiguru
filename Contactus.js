@@ -1,10 +1,26 @@
 import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet,Linking,Navigator, ScrollView, TouchableWithoutFeedback,BackAndroid } from 'react-native';
+import { View, StyleSheet,Image,Linking,Navigator, ScrollView, TouchableWithoutFeedback,BackAndroid } from 'react-native';
 
 import Communications from 'react-native-communications';
 
 
+
+
 import {Text, Button, SocialIcon} from 'react-native-elements';
+class BackgroundImage extends Component {
+  
+    render() {
+        return (
+            <Image source={require('./images/conus.jpg')}
+                  style={styles.backgroundImage}>
+
+                  {this.props.children}
+
+            </Image>
+        );
+    }
+}
+
 export default class Contactus extends Component {
   static get defaultProps() {
     return {
@@ -22,8 +38,9 @@ export default class Contactus extends Component {
 
   render() {
     return (
+      <BackgroundImage>
       <ScrollView>
-      <View style={styles.container}>
+      
 
         <View style={styles.dev}>
              <Button icon={{name: 'android'}}  large backgroundColor='rgba(0,0,0,0.1)' title='Developers' ></Button>
@@ -70,8 +87,9 @@ export default class Contactus extends Component {
       
  
          
-        </View>
+       
         </ScrollView>
+        </BackgroundImage>
     )
   }
   componentDidMount() {
@@ -87,7 +105,7 @@ const styles = StyleSheet.create({
   dev: {
     flex: 3,
     margin: 20,
-    backgroundColor: '#353a47',
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
   welcome: {
     fontSize: 23,
@@ -115,6 +133,12 @@ const styles = StyleSheet.create({
     margin: 10,
     color: 'white',
   },
+   backgroundImage: {
+        flex: 1,
+        width: null,
+        height: null,
+        resizeMode: 'cover'
+    },
   instructions: {
     color: '#333333',
     marginBottom: 5,
