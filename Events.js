@@ -272,7 +272,7 @@ export default class Events extends Component {
     return (
      <View style={{ flex: 1 }} onLayout={this._onLayoutDidChange}>
          
-        <Swiper style={this.state.size} showsButtons={false}  autoplay={true} autoplayTimeout={3} >
+        <Swiper style={this.state.size} showsButtons={false} dotColor={'grey'} activeDotColor={'white'} autoplay={false} >
           <View style={[this.state.size]}>
             <Image style={{
           flex: 1,
