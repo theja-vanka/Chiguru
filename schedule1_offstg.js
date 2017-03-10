@@ -65,7 +65,7 @@ export default class Offstg1 extends Component {
     },
     {
     name: 'Counter Strike',
-    subtitle: '10:00 AM - 12:00 PM \n Venue: Ground Floor Computer Labs',
+    subtitle: '10:00 AM - 12:00 PM \n Venue: 1st Floor Computer Labs',
     icon: 'event',
     ricon: 'phone',
     phone: () => Communications.phonecall('+919066324604', true),
@@ -79,14 +79,14 @@ export default class Offstg1 extends Component {
     },
     {
     name: 'Dota 2',
-    subtitle: '03:00 PM - 05:00 PM \n Venue: Ground Floor Computer Labs',
+    subtitle: '03:00 PM - 05:00 PM \n Venue: 1st Floor Computer Labs',
     icon: 'event',
     ricon: 'phone',
     phone: () => Communications.phonecall('+919066324604', true),
     },
     {
     name: 'FIFA',
-    subtitle: '01:00 PM - 03:00 PM \n Venue: Ground Floor Camputer Labs',
+    subtitle: '01:00 PM - 03:00 PM \n Venue: 1st Floor Camputer Labs',
     icon: 'event',
     ricon: 'phone',
     phone: () => Communications.phonecall('+919066324604', true),
@@ -104,6 +104,13 @@ export default class Offstg1 extends Component {
     icon: 'event',
     ricon: 'phone',
     phone: () => Communications.phonecall('+918884943183', true),
+  },
+  {
+    name: 'Gully Cricket',
+    subtitle: '10:00 AM - 04:00 PM \n Venue: Ground',
+    icon: 'event',
+    ricon: 'phone',
+    phone: () => Communications.phonecall('+919686448865', true),
     },
     {
     name: 'Minute To Win It',

@@ -63,13 +63,7 @@ export default class Offstg2 extends Component {
     ricon: 'phone',
     phone: () => Communications.phonecall('+919686448865', true),
     },
-    {
-    name: 'Gully Cricket',
-    subtitle: '10:00 AM - 04:00 PM \n Venue: Ground',
-    icon: 'event',
-    ricon: 'phone',
-    phone: () => Communications.phonecall('+919686448865', true),
-    },
+    
     {
     name: 'Kannada Quiz',
     subtitle: '10:00 AM - 01:00 PM \n Venue: Ground Floor Room No. G3',
